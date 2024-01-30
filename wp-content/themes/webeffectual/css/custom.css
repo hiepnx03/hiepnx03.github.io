@@ -1490,7 +1490,7 @@ opacity: 1;
 }
 
 .bulldog .project-image .image {
-	background:url(../images/bulldog.jpg) no-repeat;
+	background:url(../images/bulldog1.jpg) no-repeat;
 }
 
 .project:nth-of-type(even) {
@@ -1499,7 +1499,7 @@ opacity: 1;
 }
 
 .echo360 .project-image .image {
-	background:url(../images/echo.jpg) no-repeat;
+	background:url(../images/echo1.jpg) no-repeat;
 }
 
 .bulldogyoga .project-image .image {
