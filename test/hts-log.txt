@@ -1,0 +1,32 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 26 Jan 2024 06:17:27 at https://demo.cocobasic.com/fabius-wp/demo-2/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://demo.cocobasic.com/fabius-wp/demo-2/ -O1 "C:\My Web Sites\test" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+06:17:44	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo.cocobasic.com/fabius-wp/demo-2/xmlrpc.php?rsd (from https://demo.cocobasic.com/fabius-wp/demo-2/)
+06:17:56	Error: 	"Not Found" (404) at link https://demo.cocobasic.com/fabius-wp/demo-2/404 (from https://demo.cocobasic.com/fabius-wp/demo-2/)
+06:17:59	Error: 	"Not Found" (404) at link https://demo.cocobasic.com/fabius-wp/demo-2/wp-content/plugins/cocobasic-elementor/assets/css/owl.video.play.png (from https://demo.cocobasic.com/fabius-wp/demo-2/wp-content/cache/autoptimize/css/autoptimize_821b1998f405fdc2d23b55bd15d17441.css)
+06:17:59	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo.cocobasic.com/fabius-wp/demo-2/xmlrpc.php?rsd (from https://demo.cocobasic.com/fabius-wp/demo-2/)
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=131
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=131 to https://demo.cocobasic.com/fabius-wp/demo-2/hundreds-of-thousands-a-still-more-glorious-nights-around-art/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=32
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=32 to https://demo.cocobasic.com/fabius-wp/demo-2/portfolio/item-1/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=562
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=562 to https://demo.cocobasic.com/fabius-wp/demo-2/portfolio/item-2/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=561
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=561 to https://demo.cocobasic.com/fabius-wp/demo-2/portfolio/item-3/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=560
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=560 to https://demo.cocobasic.com/fabius-wp/demo-2/portfolio/item-4/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=174
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=174 to https://demo.cocobasic.com/fabius-wp/demo-2/preserve-and-cherish-that-pale-blue-dot-are-light-years/
+06:18:00	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=175
+06:18:00	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=175 to https://demo.cocobasic.com/fabius-wp/demo-2/great-turbulent-clouds-hearts-of-the-stars-stirred-by-starlight-sky/
+06:18:01	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://demo.cocobasic.com/fabius-wp/demo-2/xmlrpc.php?rsd (from https://demo.cocobasic.com/fabius-wp/demo-2/)
+06:18:02	Warning: 	Moved Permanently for https://demo.cocobasic.com/fabius-wp/demo-2/?p=291
+06:18:02	Warning: 	File has moved from https://demo.cocobasic.com/fabius-wp/demo-2/?p=291 to https://demo.cocobasic.com/fabius-wp/demo-2/cambrian-explosion-kindling-the-energy-hidden-in-matter-vanquish-now/
+
+HTTrack Website Copier/3.49-2 mirror complete in 35 seconds : 105 links scanned, 91 files written (4113249 bytes overall) [1868296 bytes received at 53379 bytes/sec], 3095504 bytes transferred using HTTP compression in 61 files, ratio 24%, 11.1 requests per connection
+(3 errors, 18 warnings, 0 messages)
