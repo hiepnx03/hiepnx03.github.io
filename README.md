@@ -4,4 +4,6 @@
 - https://hiepnx03.github.io/game/xuanhiep/hellohiep.html
 - https://hiepnx03.github.io/old/d.html
 - https://hiepnx03.github.io/xuanhiep/hellohiep.html
-- https://hiepnx03.github.io/hobbies/index.htmlg
+- https://hiepnx03.github.io/hobbies/index.html
+- https://hiepnx03.github.io/hobbies/hellohiep.html
+- https://hiepnx03.github.io/testproject/nguyenthithanhtam/src/views/layout-main/LayoutMain.html
