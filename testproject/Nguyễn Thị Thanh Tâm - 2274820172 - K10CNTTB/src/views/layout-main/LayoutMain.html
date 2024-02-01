@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../../../assets/css/base.css" rel="stylesheet" />
+    <link href="../../../assets/css/main.css" rel="stylesheet" />
+    <link href="./LayoutMain.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Home Page</title>
+  </head>
+  <style></style>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-content__main">
+          <div class="header-content__title">
+            <nav class="navigation">
+              <a href="#!" class="logo">Jobs For Student</a>
+            </nav>
+          </div>
+          <div id="menu">
+            <ul>
+              <li><a onclick="onClickHomePage()">Trang chủ</a></li>
+              <li>
+                <a href="#">Việc làm</a>
+                <ul class="sub-menu">
+                  <li><a href=""> Việc làm mới nhất</a></li>
+                  <li><a href=""> Tìm việc làm</a></li>
+                  <li><a href=""> Việc làm mới nhất</a></li>
+                  <li>
+                    <a href="">
+                      <span>Việc làm cho IT</span>
+                      <div style="position: absolute; right: 20px; top: 0">
+                        <i class="arrow right"></i></div
+                    ></a>
+                    <ul class="sub-menu__child">
+                      <li><a href="">Tester</a></li>
+                      <li><a href="">Business Analyst</a></li>
+                      <li><a href="">Phần mềm</a></li>
+                      <li><a href="">Phần cứng</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a onclick="onClickCompany()"> Công ty</a></li>
+              <li><a href="#"> Nghề nghiệp</a></li>
+              <li><a href="#"> Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="header-content__right">
+            <div class="flex" style="position: relative">
+              <div style="padding-right: 10px">
+                <a onclick="onClickNhaTuyenDung()">Nhà tuyển dụng</a>
+              </div>
+              <div class="divider-horizontal"></div>
+              <div class="pl-2">
+                <a>Đăng Nhập/Đăng Ký</a>
+              </div>
+
+              <div class="pl-5 pr-[20px]">
+                <a>VN</a>
+                <span>|</span>
+                <a style="color: var(--grayColor)">EN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-content__main">
+          <div id="search">
+            <section class="main">
+              <div class="container-content__search w-full pt-10 pb-10">
+                <div class="search-header">
+                  <h4 class="text-white">
+                    1000 Công việc tốt nhất cho sinh viên
+                  </h4>
+                </div>
+                <div class="search-content pt-8">
+                  <div class="search-content__select">
+                    <select
+                      name="cars"
+                      id="cars"
+                      class="rounded text-black pl-5 pr-5 h-[55px] w-[250px]"
+                    >
+                      <option value="">Tất cả thành phố</option>
+                      <option value="HCM">Hồ chí Minh</option>
+                      <option value="HN">Hà Nội</option>
+                      <option value="DN">Đà Nẵng</option>
+                      <option value="CT">Cần Thơ</option>
+                    </select>
+                  </div>
+                  <div class="search-content__input search-content">
+                    <input
+                      type="text"
+                      class="rounded pl-4 pr-4 w-full text-black"
+                      placeholder="Tìm kiếm việc làm, công ty, kỹ năng"
+                    />
+                  </div>
+                  <div
+                    class="search-content__btn bg-white flex rounded text-black"
+                  >
+                    <button class="text-xl flex justify-center items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                        class="text-white"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                        />
+                      </svg>
+                      <span class="search-btn__text text-white pl-3">
+                        Tìm kiếm</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="search-content__keyword">
+                  <div class="keyword-label">
+                    <label>Mọi người đang tìm kiếm:</label>
+                  </div>
+                  <div class="keyword-content"></div>
+                </div>
+              </div>
+            </section>
+            <div class="company-main">
+              <section class="main">
+                <div class="company-title" data-aos="fade-right">
+                  <h4 for="">Các công ty hàng đầu</h4>
+                </div>
+                <div class="company-content" data-aos="fade-left"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="bestjob-main">
+          <section class="main">
+            <div
+              class="bestjob-content"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <div class="bestjob-content__title">
+                <h4>Việc làm tốt nhất</h4>
+              </div>
+              <div class="bestjob-content__info">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper grid-container"></div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section id="career" class="main">
+          <div data-aos="fade-down">
+            <div class="career-heading" data-aos="fade-up-left">
+              <h3>Ngành nghề trọng điểm</h3>
+            </div>
+            <div class="career-container"></div>
+          </div>
+        </section>
+      </div>
+      <div class="CV">
+        <section class="main">
+          <div class="CV-content" data-aos="zoom-in">
+            <img
+              src="https://images.vietnamworks.com/logo/4-1392x326_124752.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+      <div id="progress" onclick="window.scrollTo(0,0)">
+        <div id="value">0%</div>
+      </div>
+    </main>
+    <div>
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-content__box1 footer-box">
+            <span class="font-semibold">JobsForStudent</span>
+            <a>Về JobsForStudent</a>
+            <a>Liên hệ</a>
+            <a>Hỏi đáp</a>
+            <a>Quy định bảo mật</a>
+            <a>Câu hỏi thường gặp</a>
+          </div>
+          <div class="footer-content__box2 footer-box">
+            <span>Dành cho nhà tuyển dụng</span>
+            <a>Đăng tuyển dụng</a>
+            <a>Tìm kiếm hồ sơ</a>
+            <a>Sản phẩm Dịch vụ khác</a>
+            <a>Liên hệ</a>
+          </div>
+          <div class="footer-content__box3 footer-box">
+            <span>Việc làm theo khu vục</span>
+            <a>Hồ Chí Minh</a>
+            <a>Hà Nội</a>
+            <a>Hải Phòng</a>
+            <a>Đà Nẵng</a>
+            <a>Cần Thơ</a>
+          </div>
+          <div class="footer-content__box4 footer-box">
+            <span>Việc làm theo ngành nghề</span>
+            <a>Kế toán</a>
+            <a>Ngân hàng</a>
+            <a>IT - Phần mềm</a>
+            <a>IT - Phần cứng/Mạng</a>
+            <a>Xây dựng</a>
+          </div>
+          <div class="footer-content__box5 footer-box">
+            <span>Thông tin liên hệ</span>
+            <a>Chứng nhận bởi</a>
+            <img
+              src="data:image/png;base64,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"
+              width="124"
+              alt="Chứng nhận bởi"
+            />
+            <a>Theo dõi JobsForStudent</a>
+            <div class="flex gap-4">
+              <img
+                src="https://images.vietnamworks.com/icon/social-icons/facebook.svg"
+                width="20"
+                height="20"
+              />
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                title="JobsForStudent's Linkedin"
+                ><img
+                  src="https://images.vietnamworks.com/icon/social-icons/linkedin.svg"
+                  width="20"
+                  height="20"
+              /></a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                title="JobsForStudent's Youtube"
+                ><img
+                  src="https://images.vietnamworks.com/icon/social-icons/youtube.svg"
+                  width="20"
+                  height="20"
+              /></a>
+              <a href="#" target="_blank" title="JobsForStudent's Tiktok">
+                <img
+                  src="https://images.vietnamworks.com/icon/social-icons/tiktok.svg"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <span>Copyright © JobsForStudent JSC</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const mySwiper = new Swiper(".swiper-container", {
+      slidesPerView: 3,
+      slidesPerColumn: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 20,
+      grid: {
+        rows: 3,
+        fill: "row",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      on: {
+        init: function () {},
+        orientationchange: function () {},
+        beforeResize: function () {
+          let vw = window.innerWidth;
+          if (vw > 1000) {
+            mySwiper.params.slidesPerView = 3;
+            mySwiper.params.slidesPerColumn = 3;
+            mySwiper.params.slidesPerGroup = 2;
+          } else {
+            mySwiper.params.slidesPerView = 2;
+            mySwiper.params.slidesPerColumn = 1;
+            mySwiper.params.slidesPerGroup = 1;
+          }
+        },
+      },
+    });
+
+    AOS.init({
+      duration: 1000,
+    });
+    const data = [
+      {
+        id: "01",
+        title: "Kinh doanh",
+        contents: [
+          "1368 Việc Làm",
+          "Mức lương trung bình:",
+          "4-21 triệu VNĐ/tháng.",
+        ],
+      },
+      {
+        id: "02",
+        title: "Công nghệ thông tin",
+        contents: [
+          "836 Việc Làm",
+          "Mức lương trung bình:",
+          "13.8-50 triệu VNĐ/tháng.",
+        ],
+      },
+      {
+        id: "03",
+        title: "Kế toán / kiểm toán",
+        contents: [
+          "675 Việc Làm",
+          "Mức lương trung bình:",
+          "9-13 triệu VND/tháng",
+        ],
+      },
+      {
+        id: "04",
+        title: "Ngân hàng",
+        contents: [
+          "518 việc làm",
+          "Mức lương trung bình:",
+          "12-20 triệu VND/tháng",
+        ],
+      },
+      {
+        id: "05",
+        title: "Kiến trúc/Xây dựng",
+        contents: [
+          "468 Việc Làm",
+          "Mức lương trung bình:",
+          "10-30 triệu VND/tháng",
+        ],
+      },
+      {
+        id: "06",
+        title: "Bất động sản",
+        contents: [
+          "90 việc làm",
+          "Mức lương trung bình:",
+          "3.5 - 30 triệu VND/tháng",
+        ],
+      },
+    ];
+
+    const elCareer = document.getElementsByClassName("career-container")[0];
+    elCareer.innerHTML = data
+      .map(
+        (process) =>
+          `
+          <div class="career-box" key="${process.id}">
+            <span>${process.id}</span>
+            <strong>${process.title}</strong>
+            <ul>
+              ${process.contents
+                .map(
+                  (content, index) => `
+                <li key="${index}">${content}</li>`
+                )
+                .join(" ")}
+            </ul>
+           <div class="pt-6">
+             <a href="!#" class='btn-link contact-bt'>
+              Xem thêm</i>
+          </a>
+          </div>
+          </div>
+          `
+      )
+      .join(" ");
+
+    const listKeyWords = [
+      "Kiến trúc sư",
+      "React",
+      "Bất động sản",
+      "Kế toán",
+      "Quản trị kinh doanh",
+      "Tester",
+      "Business Analyst",
+    ];
+
+    const elKeyword = document.getElementsByClassName("keyword-content")[0];
+    elKeyword.innerHTML = listKeyWords
+      .map(
+        (keyword) =>
+          `
+              <div class='keyword-main'>
+            <label class="border rounded-full p-1 btn-keyword" >${keyword}</label>
+          </div>
+        `
+      )
+      .join(" ");
+
+    const listCompanyTop = [
+      {
+        img: "https://images.vietnamworks.com/logo/capge_vip_124731.png",
+        title: "Capgemini Việt Nam",
+        link: "https://www.vietnamworks.com/company/Capgemini",
+      },
+      {
+        img: "https://images.vietnamworks.com/logo/tekex_vip1_101558.png",
+        title: "Tek Experts",
+        link: "",
+      },
+      {
+        img: "https://images.vietnamworks.com/logo/bacabank_vip1_117492.png",
+        title: "Ngân hàng TMCP Bắc Á",
+        link: "",
+      },
+      {
+        img: "https://images.vietnamworks.com/logo/chailease_vip_111632.jpg",
+        title: "Chailease",
+        link: "",
+      },
+      {
+        img: "https://images.vietnamworks.com/logo/cityland_vip_124712.png",
+        title: "Tập đoàn Cityland",
+        link: "",
+      },
+      {
+        img: "https://images.vietnamworks.com/logo/bidvsumi_vip_123501.jpg",
+        title: "BIDV-SuMi Trust",
+        link: "",
+      },
+    ];
+
+    const elCompany = document.getElementsByClassName("company-content")[0];
+
+    elCompany.innerHTML = listCompanyTop
+      .map(
+        (company) =>
+          `
+          <div class="company-content__box">
+            <div class="company-content__img">
+              <img src="${company.img}" alt="">
+            </div>
+          <div class="company-content__title">
+              <a>${company.title}</a>
+          </div>
+          <button class="btn-main company-content__btn">Việc mới</button>
+        </div>
+          `
+      )
+      .join(" ");
+
+    const listJobsTop = [
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/c7/11128473.png",
+        title: "Secutity Manager",
+        des: "Aeon Mall Vietnam Co., Ltd",
+        earning: "$400 - $600",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/a1/11125467.png",
+        title: "Presale Công Nghệ thông tin Công Nghệ thông tin",
+        des: "Công Ty Cổ Phần Công Nghệ MobiFone Toàn Cầu ( MobiFone Global)",
+        earning: "Thương lượng",
+        city: "Hà Nội",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/1f/11223889.png",
+        title: "Facility & Security Officer (Aeon Mall Tan Phu - 339)",
+        des: "AEONMALL Vietnam Co., Ltd",
+        earning: "$400 - $600",
+        city: "Thừa Thiên Huế",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/18/11127500.png",
+        title: "Senior Sales Executive (Medical)",
+        des: "Công Ty Cổ Phần Vinbrain",
+        earning: "Thương lượng",
+        city: "Hà Nội, Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/fb/11129779.png",
+        title:
+          "Junior/ Senior Web Publisher (Frontend Developer) (JavaScript, HTML5, CSS)",
+        des: "NEXON DEV VINA",
+        earning: "Thương lượng",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/5e/11232235.png",
+        title:
+          "Cán Bộ Phát Triển Chương Trình (Phụ Trách Ngành Công Nghệ Thông Tin)",
+        des: "Chuyên Viên Giải Pháp Viễn Thông và Công Nghệ Thông Tin",
+        earning: "Thương lượng",
+        city: "Hà Nội",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/a1/11125467.png",
+        title: "Facility & Security Officer",
+        des: "Aeon Mall Vietnam Co., Ltd",
+        earning: "$400 - $600",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/39/10808735.png",
+        title: "Senior Investment Analyst",
+        des: "Techcom Securities (Tcbs)",
+        earning: "$1000 - $2000",
+        city: "Hà Nội",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/d4/11148742.png",
+        title: "Content Marketing Specialist (Cryptocurrency/blockchain)",
+        des: "Athena TechHub",
+        earning: "$1000 - $1500",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/d5/10894078.png",
+        title: "Student Services Manager",
+        des: "Công Ty TNHH Giáo Dục Và Đào Tạo Vinuniversity",
+        earning: "Thương lượng",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/59/11176232.png",
+        title: "Trưởng Nhóm Kế Toán Thuế (Mảng Xây Dựng, Bất Động Sản)",
+        des: "Eurowindow Holding",
+        earning: "Thương lượng",
+        city: "Hà Nội",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/d1/11125570.png",
+        title: "Nhân Viên Quan Hệ Khách Hàng Doanh Nghiệp",
+        des: "Chailease International Leasing Co., Ltd",
+        earning: "Thương lượng",
+        city: "Bình Dương, Cần Thwo, Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/54/11225215.png",
+        title: "QA Game Tester",
+        des: "Nexon Networks Vina Co. Ltd,",
+        earning: "Thương lượng",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/a1/11125467.png",
+        title: "Facility & Security Officer",
+        des: "Aeon Mall Vietnam Co., Ltd",
+        earning: "$400 - $600",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/a1/11125467.png",
+        title: "Facility & Security Officer",
+        des: "Aeon Mall Vietnam Co., Ltd",
+        earning: "$400 - $600",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/d4/11210906.jpg",
+        title: "Operation Support (Analyst) Intern",
+        des: "Seven System Viet Nam JSC (7-Eleven)",
+        earning: "Thương lượng",
+        city: "Hồ Chí Minh",
+      },
+      {
+        img: "https://images.vietnamworks.com/pictureofcompany/3b/10304843.png",
+        title: "[Remote] Mobile Game Developer",
+        des: "Công Ty TNHH Ateam Việt Nam",
+        earning: "Thượng lượng",
+        city: "Hồ Chí Minh",
+      },
+    ];
+
+    const elWripers = document.getElementsByClassName("swiper-wrapper")[0];
+    elWripers.innerHTML = listJobsTop
+      .map(
+        (item) => `
+        <div class="swiper-slide job-box" style="display: flex;justify-content: start;align-items: center;">
+      <div class="job-box__img" style="display: flex;justify-content: center;align-items: center;padding: 2px;margin: 0 20px 0 10px">
+      <img
+        src="${item.img}"
+        />
+        </div>
+        <div class="job-box__content">
+          <span title="${item.title}">${item.title}</span>
+          <span>${item.des}</span>
+          <span>${item.earning}</span>
+          <span>${item.city}</span>
+      </div>
+      </div>
+        `
+      )
+      .join(" ");
+
+    const onClickNhaTuyenDung = () => {
+      window.location.assign("../nha-tuyen-dung/TuyenDung.html");
+    };
+    const onClickCompany = () => {
+      window.location.assign("../company/Company.html");
+    };
+
+    window.addEventListener("scroll", function () {
+      createProgress();
+    });
+    function createProgress() {
+      const run = false;
+      const progressRef = document.getElementById("progress");
+      const valueRef = document.getElementById("value");
+
+      window.onscroll = () => setRun(!run);
+      window.onload = () => setRun(!run);
+
+      function setRun(value) {
+        run = value;
+        updateProgress();
+      }
+
+      function updateProgress() {
+        const pos = document.documentElement.scrollTop;
+        const calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrollValue = Math.round((pos * 100) / calcHeight);
+        progressRef.style.background = `conic-gradient(#689af8 ${scrollValue}% , #2b2f38 ${scrollValue}% )`;
+        valueRef.innerText = `${scrollValue}%`;
+      }
+
+      // Initial update
+      updateProgress();
+
+      // Scroll to top when progress bar is clicked
+      progressRef.addEventListener("click", () => window.scrollTo(0, 0));
+    }
+    createProgress();
+  </script>
+</html>

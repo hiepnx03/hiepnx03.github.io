@@ -1,0 +1,131 @@
+#header {
+  z-index: 2023;
+}
+
+.header-content__main {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  background-color: var(--bgColor);
+}
+#menu {
+  padding-left: 50px;
+}
+
+#menu > ul > li > a {
+  color: var(--whiteColor);
+}
+
+#menu > ul > li {
+  color: black;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#menu ul li a:hover {
+  color: var(--grayColor);
+}
+
+#menu ul li > .sub-menu {
+  display: none;
+  position: absolute;
+}
+
+#menu ul li > .sub-menu__child {
+  display: none;
+  position: absolute;
+}
+
+.sub-menu__child {
+  display: none;
+  position: absolute;
+  background-color: var(--whiteColor);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+}
+
+#menu li {
+  position: relative;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--whiteColor);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+}
+
+#menu ul li:hover .sub-menu {
+  display: block;
+  border-radius: 4px;
+}
+
+#menu ul li .sub-menu li:hover > .sub-menu__child {
+  display: block;
+  border-radius: 4px;
+  left: 180px;
+  top: 0px;
+}
+
+#menu .sub-menu li:hover {
+  display: block;
+  background-color: #ccc;
+}
+
+#menu .sub-menu li a {
+  padding: 4px;
+}
+
+#menu .sub-menu li:hover > a {
+  display: block;
+  color: rgb(105, 105, 105);
+  background-color: #ccc;
+}
+
+.arrow {
+  border: solid rgb(105, 105, 105);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.header-content__right {
+  position: absolute;
+  right: 0;
+}
+.divider-horizontal::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  width: 1px;
+  height: 100%;
+  opacity: 0.9;
+  background: rgb(133, 192, 232);
+  transform: translate(-50%);
+}

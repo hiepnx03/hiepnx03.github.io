@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../../../assets/css/base.css" rel="stylesheet" />
+    <link href="../../../assets/css/main.css" rel="stylesheet" />
+    <link href="../layout-main/LayoutMain.css" rel="stylesheet" />
+    <link href="./Company.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Tuyển dụng</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-content__main">
+          <div class="header-content__title">
+            <nav class="navigation">
+              <a onclick="onClickHomePage()" class="logo">Jobs For Student</a>
+            </nav>
+          </div>
+          <div id="menu">
+            <ul>
+              <li><a onclick="onClickHomePage()">Trang chủ</a></li>
+              <li>
+                <a href="#">Việc làm</a>
+                <ul class="sub-menu">
+                  <li><a href=""> Việc làm mới nhất</a></li>
+                  <li><a href=""> Tìm việc làm</a></li>
+                  <li><a href=""> Việc làm mới nhất</a></li>
+                  <li>
+                    <a href="">
+                      <span>Việc làm cho IT</span>
+                      <div style="position: absolute; right: 20px; top: 0">
+                        <i class="arrow right"></i></div
+                    ></a>
+                    <ul class="sub-menu__child">
+                      <li><a href="">Tester</a></li>
+                      <li><a href="">Business Analyst</a></li>
+                      <li><a href="">Phần mềm</a></li>
+                      <li><a href="">Phần cứng</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a> Công ty</a></li>
+              <li><a href="#"> Nghề nghiệp</a></li>
+              <li><a onclick="onClickBlog()">Blog</a></li>
+            </ul>
+          </div>
+          <div class="header-content__right">
+            <div class="flex" style="position: relative">
+              <div style="padding-right: 10px">
+                <a onclick="onClickNhaTuyenDung()">Nhà tuyển dụng</a>
+              </div>
+              <div class="divider-horizontal"></div>
+              <div class="pl-2">
+                <a>Đăng Nhập/Đăng Ký</a>
+              </div>
+
+              <div class="pl-5 pr-[20px]">
+                <a>VN</a>
+                <span>|</span>
+                <a style="color: var(--grayColor)">EN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container-content__main">
+        <div class="company-search">
+          <section class="main">
+            <div class="company-search__content">
+              <div class="company-search__content--search">
+                <div class="company-search__title">
+                  <h4>Khám Phá Văn Hóa Công Ty</h4>
+                </div>
+                <div class="company-search__des">
+                  <span
+                    >Tìm hiểu văn hóa công ty và chọn cho bạn nơi làm việc phù
+                    hợp nhất</span
+                  >
+                </div>
+                <div class="company-search__input">
+                  <input type="text" placeholder="Nhập tên công ty" />
+                  <button class="company-search__btn">Tìm</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="business-top">
+            <section class="main">
+              <div class="business-top__content">
+                <div class="business-top__content--title">
+                  <h4>Công ty nổi bật <span>( 528 )</span></h4>
+                </div>
+                <div class="content-main"></div>
+                <div
+                  class="btn-more"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 40px;
+                  "
+                >
+                  <button class="btn-main" onclick="onClickMoreBtn()">
+                    Xem thêm
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-content__box1 footer-box">
+            <span class="font-semibold">JobsForStudent</span>
+            <a>Về JobsForStudent</a>
+            <a>Liên hệ</a>
+            <a>Hỏi đáp</a>
+            <a>Quy định bảo mật</a>
+            <a>Câu hỏi thường gặp</a>
+          </div>
+          <div class="footer-content__box2 footer-box">
+            <span>Dành cho nhà tuyển dụng</span>
+            <a>Đăng tuyển dụng</a>
+            <a>Tìm kiếm hồ sơ</a>
+            <a>Sản phẩm Dịch vụ khác</a>
+            <a>Liên hệ</a>
+          </div>
+          <div class="footer-content__box3 footer-box">
+            <span>Việc làm theo khu vục</span>
+            <a>Hồ Chí Minh</a>
+            <a>Hà Nội</a>
+            <a>Hải Phòng</a>
+            <a>Đà Nẵng</a>
+            <a>Cần Thơ</a>
+          </div>
+          <div class="footer-content__box4 footer-box">
+            <span>Việc làm theo ngành nghề</span>
+            <a>Kế toán</a>
+            <a>Ngân hàng</a>
+            <a>IT - Phần mềm</a>
+            <a>IT - Phần cứng/Mạng</a>
+            <a>Xây dựng</a>
+          </div>
+          <div class="footer-content__box5 footer-box">
+            <span>Thông tin liên hệ</span>
+            <a>Chứng nhận bởi</a>
+            <img
+              src="data:image/png;base64,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"
+              width="124"
+              alt="Chứng nhận bởi"
+            />
+            <a>Theo dõi JobsForStudent</a>
+            <div class="flex gap-4">
+              <img
+                src="https://images.vietnamworks.com/icon/social-icons/facebook.svg"
+                width="20"
+                height="20"
+              />
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                title="JobsForStudent's Linkedin"
+                ><img
+                  src="https://images.vietnamworks.com/icon/social-icons/linkedin.svg"
+                  width="20"
+                  height="20"
+              /></a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                title="JobsForStudent's Youtube"
+                ><img
+                  src="https://images.vietnamworks.com/icon/social-icons/youtube.svg"
+                  width="20"
+                  height="20"
+              /></a>
+              <a href="#" target="_blank" title="JobsForStudent's Tiktok">
+                <img
+                  src="https://images.vietnamworks.com/icon/social-icons/tiktok.svg"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <span>Copyright © JobsForStudent JSC</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+    const listBusiness = [
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2FVPBANK%2Fvi%2Fnoi_lam_viec_hanh_phuc_nhat_2019_-2-02_1_.jpg&w=1920&q=75",
+        logo: "https://employer.vietnamworks.com/v2/img/partner/8.svg",
+        nameCompany: "Ngân Hàng TMCP Việt Nam Thịnh Vượng - VP Bank",
+        chuyenNganh: "Ngân hàng",
+        viecLam: "7",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FPGbank-cover2.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fvietnamworks%2Fvi%2FPG_Bank-Logo.png&w=1920&q=75",
+        nameCompany: "Ngân hàng thương mại cổ phần Thịnh vượng và Phát triển",
+        chuyenNganh: "Hóa chất/ Hóa sinh",
+        viecLam: "80",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2Fbanner_doji_11.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2FDOJI-Group%2Fvi%2Ficon_tuyen_dung-13.png&w=1920&q=75",
+        nameCompany: "Tập đoàn vàng bạc đá quý DOJI",
+        chuyenNganh: "Thời trang/ Trang sức",
+        viecLam: "10",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FCover_An_Ph%C3%A1t-min-min.png&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FLogo-An-Phat.png&w=1920&q=75",
+        nameCompany: "CÔNG TY CỔ PHẦN TẬP ĐOÀN AN PHÁT HOLDINGS",
+        chuyenNganh: "Sản xuất",
+        viecLam: "7",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FVNpay.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FLogo_VNPAY.jpg&w=1920&q=75",
+        nameCompany: "Công Ty CP Giải Pháp Thanh Toán Việt Nam (VNPAY)",
+        chuyenNganh: "Tài Chính",
+        viecLam: "19",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F%E1%BA%A2nh_%C4%91%E1%BB%83_thay.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2FStringee-communicationapis%2Fvi%2FStringee_logo-03.png&w=1920&q=75",
+        nameCompany: "STRINGEE",
+        chuyenNganh: "Phần Mềm CNTT/ Dịch vụ Phần mềm",
+        viecLam: "1",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F21.9_Ngan_hang_xanh_Cover_resized_1_.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2Flogo_xanh.jpg&w=1920&q=75",
+        nameCompany: "Ngân Hàng TMCP Đầu Tư & Phát Triển Việt Nam (BIDV)",
+        chuyenNganh: "Ngân hàng",
+        viecLam: "5",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fbanner-default-company.png&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Fpictureofcompany%2Fcd%2F10320301.png&w=1920&q=75",
+        nameCompany: "Tập Đoàn VinGroup - Công Ty CP",
+        chuyenNganh: "Kỹ thuật xây dựng/ Cơ sở hạ tầng",
+        viecLam: "20",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2Faaaaaa.png&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fmisa%2Fen%2FLogo-MISA_VN_Nen-trang.jpg&w=1920&q=75",
+        nameCompany: "Công ty cổ phần MISA",
+        chuyenNganh: "Phần Mềm CNTT/ Dịch vụ Phần mềm",
+        viecLam: "33",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FMicrosoftTeams-image_94_.png&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2Flogo_vu%C3%B4ng_ch%E1%BB%AF_xanh_kh%C3%B4ng_n%E1%BB%81n.png&w=1920&q=75",
+        nameCompany: "Shinhan Vietnam Finance Company Limited",
+        chuyenNganh: "Tài chính",
+        viecLam: "16",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F1920x510-ACB_1_.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fvietnamworks%2Fen%2FACB-Logo.png&w=1920&q=75",
+        nameCompany: "Shinhan Vietnam Finance Company Limited",
+        chuyenNganh: "Tài chính",
+        viecLam: "33",
+      },
+      {
+        bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F%E1%BA%A2nh_Cover.jpg&w=1920&q=75",
+        logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2FCODE88%2Fen%2Fcode88-black.png&w=1920&q=75",
+        nameCompany: "Shinhan Vietnam Finance Company Limited",
+        chuyenNganh: "Tài chính",
+        viecLam: "16",
+      },
+    ];
+
+    const onClickMoreBtn = () => {
+      listBusiness.push(
+        {
+          bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2FMicrosoftTeams-image_94_.png&w=1920&q=75",
+          logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2Flogo_vu%C3%B4ng_ch%E1%BB%AF_xanh_kh%C3%B4ng_n%E1%BB%81n.png&w=1920&q=75",
+          nameCompany: "Shinhan Vietnam Finance Company Limited",
+          chuyenNganh: "Tài chính",
+          viecLam: "16",
+        },
+        {
+          bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F1920x510-ACB_1_.jpg&w=1920&q=75",
+          logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fvietnamworks%2Fen%2FACB-Logo.png&w=1920&q=75",
+          nameCompany: "Shinhan Vietnam Finance Company Limited",
+          chuyenNganh: "Tài chính",
+          viecLam: "33",
+        },
+        {
+          bg: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2Fnull%2Fen%2F%E1%BA%A2nh_Cover.jpg&w=1920&q=75",
+          logo: "https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages02.vietnamworks.com%2Fcompanyprofile%2FCODE88%2Fen%2Fcode88-black.png&w=1920&q=75",
+          nameCompany: "Shinhan Vietnam Finance Company Limited",
+          chuyenNganh: "Tài chính",
+          viecLam: "16",
+        }
+      );
+      const elBusinessTop = document.getElementsByClassName("content-main")[0];
+      elBusinessTop.innerHTML = listBusiness
+        .map(
+          (item) =>
+            `
+        <div class="business-top__content--box">
+   <div class="bg-top">
+      <img
+         src="${item.bg}"
+         alt=""
+         />
+   </div>
+   <div class="logo-box">
+      <img
+         src="${item.logo}"
+         alt=""
+         />
+   </div>
+   <div style="padding: 0 16px 30px 16px;margin-top:80px" class="company-info">
+      <div
+         style="
+         color: black;
+         display: flex;
+         flex-direction: column;
+         padding-top: 30px;
+         padding-bottom: 6px
+         class="content-company"
+         "
+         >
+         <span title="${item.nameCompany}">
+          
+          ${item.nameCompany}</span>
+         <span style="display: flex; align-items: center; gap:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0px;"><g clip-path="url(#clip0_533_6629)"><path d="M4.02887 4C3.19226 4 2.51464 4.67762 2.51464 5.51423V7.78557V9.29979H16.8998H20.6854V7.02845C20.6854 6.19184 20.0077 5.51423 19.1711 5.51423H9.47949L9.01221 4.73493C8.73889 4.27915 8.24613 4 7.71388 4H4.02887ZM2.13757 10.814C1.37364 10.814 0.82659 11.554 1.0507 12.2839L3.29837 19.5874C3.49447 20.2226 4.08131 20.6565 4.74606 20.6565H11.6H18.4539C19.1187 20.6565 19.7055 20.2226 19.9016 19.5874L22.1493 12.2839C22.3734 11.554 21.8264 10.814 21.0624 10.814H11.6H2.13757Z" fill="#888"></path></g><defs><clipPath id="clip0_533_6629"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+          ${item.chuyenNganh}</span>
+         <span style="display: flex; align-items: center; gap:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.2 2.40002C10.316 2.40002 9.59998 3.11602 9.59998 4.00002H3.19998C2.31598 4.00002 1.59998 4.71602 1.59998 5.60002V12.8C1.59998 13.684 2.31598 14.4 3.19998 14.4H20.8C21.684 14.4 22.4 13.684 22.4 12.8V5.60002C22.4 4.71602 21.684 4.00002 20.8 4.00002H14.4C14.4 3.11602 13.684 2.40002 12.8 2.40002H11.2ZM12 11.2C12.4416 11.2 12.8 11.5584 12.8 12C12.8 12.4416 12.4416 12.8 12 12.8C11.5584 12.8 11.2 12.4416 11.2 12C11.2 11.5584 11.5584 11.2 12 11.2ZM1.59998 15.5547V18.4C1.59998 19.284 2.31598 20 3.19998 20H20.8C21.684 20 22.4 19.284 22.4 18.4V15.5547C21.9272 15.8299 21.3856 16 20.8 16H3.19998C2.61438 16 2.07278 15.8299 1.59998 15.5547Z" fill="#888"></path></svg>
+          ${item.viecLam} việc làm</span>
+      </div>
+      <div>
+         <button class="box-btn">Theo dõi</button>
+      </div>
+   </div>
+</div>
+    `
+        )
+        .join(" ");
+    };
+
+    const elBusinessTop = document.getElementsByClassName("content-main")[0];
+    elBusinessTop.innerHTML = listBusiness
+      .map(
+        (item) =>
+          `
+        <div class="business-top__content--box">
+   <div class="bg-top">
+      <img
+         src="${item.bg}"
+         alt=""
+         />
+   </div>
+   <div class="logo-box">
+      <img
+         src="${item.logo}"
+         alt=""
+         />
+   </div>
+   <div style="padding: 0 16px 30px 16px;margin-top:80px" class="company-info">
+      <div
+         style="
+         color: black;
+         display: flex;
+         flex-direction: column;
+         padding-top: 30px;
+         padding-bottom: 6px
+         "
+         class="content-company"
+         >
+         <span >330 theo dõi</span>
+         <span title="${item.nameCompany}">
+          
+          ${item.nameCompany}</span>
+         <span style="display: flex; align-items: center; gap:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0px;"><g clip-path="url(#clip0_533_6629)"><path d="M4.02887 4C3.19226 4 2.51464 4.67762 2.51464 5.51423V7.78557V9.29979H16.8998H20.6854V7.02845C20.6854 6.19184 20.0077 5.51423 19.1711 5.51423H9.47949L9.01221 4.73493C8.73889 4.27915 8.24613 4 7.71388 4H4.02887ZM2.13757 10.814C1.37364 10.814 0.82659 11.554 1.0507 12.2839L3.29837 19.5874C3.49447 20.2226 4.08131 20.6565 4.74606 20.6565H11.6H18.4539C19.1187 20.6565 19.7055 20.2226 19.9016 19.5874L22.1493 12.2839C22.3734 11.554 21.8264 10.814 21.0624 10.814H11.6H2.13757Z" fill="#888"></path></g><defs><clipPath id="clip0_533_6629"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+          ${item.chuyenNganh}</span>
+         <span style="display: flex; align-items: center; gap:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.2 2.40002C10.316 2.40002 9.59998 3.11602 9.59998 4.00002H3.19998C2.31598 4.00002 1.59998 4.71602 1.59998 5.60002V12.8C1.59998 13.684 2.31598 14.4 3.19998 14.4H20.8C21.684 14.4 22.4 13.684 22.4 12.8V5.60002C22.4 4.71602 21.684 4.00002 20.8 4.00002H14.4C14.4 3.11602 13.684 2.40002 12.8 2.40002H11.2ZM12 11.2C12.4416 11.2 12.8 11.5584 12.8 12C12.8 12.4416 12.4416 12.8 12 12.8C11.5584 12.8 11.2 12.4416 11.2 12C11.2 11.5584 11.5584 11.2 12 11.2ZM1.59998 15.5547V18.4C1.59998 19.284 2.31598 20 3.19998 20H20.8C21.684 20 22.4 19.284 22.4 18.4V15.5547C21.9272 15.8299 21.3856 16 20.8 16H3.19998C2.61438 16 2.07278 15.8299 1.59998 15.5547Z" fill="#888"></path></svg>
+          ${item.viecLam} việc làm</span>
+      </div>
+      <div>
+         <button class="box-btn">Theo dõi</button>
+      </div>
+   </div>
+</div>
+    `
+      )
+      .join(" ");
+
+    const onClickBlog = () => {
+      window.location.assign("../blog/Blog.html");
+    };
+    const onClickHomePage = () => {
+      window.location.assign("../layout-main/LayoutMain.html");
+    };
+    const onClickNhaTuyenDung = () => {
+      window.location.assign("../nha-tuyen-dung/TuyenDung.html");
+    };
+  </script>
+</html>
