@@ -7,4 +7,4 @@
 - https://hiepnx03.github.io/hobbies/index.html
 - https://hiepnx03.github.io/hobbies/hellohiep.html
 - https://hiepnx03.github.io/testproject/nguyenthithanhtam/src/views/layout-main/LayoutMain.html
-- https://hiepnx03.github.io/trieu.html
+- https://hiepnx03.github.io/f8-project-08/templates/index.html
