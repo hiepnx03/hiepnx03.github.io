@@ -1,12 +1,31 @@
+
+// Lấy đối tượng button chuyển đổi Dark mode
+const darkModeToggle = document.getElementById("darkModeToggle");
+
+// Bắt sự kiện khi người dùng click vào button
+darkModeToggle.addEventListener("click", function() {
+    // Toggle chế độ Dark mode bằng cách thêm/xóa lớp "dark-mode" cho body
+    document.body.classList.toggle("dark-mode");
+});
+
+
 // music
 function playPause() {
     var audio = document.getElementById('audioPlayer');
+    var volumeOff = document.getElementById('playerVolumeOff');
+    var volumeOn = document.getElementById('playerVolumeOn');
+
     if (audio.paused) {
         audio.play();
+        volumeOff.style.display = 'none';
+        volumeOn.style.display = 'inline';
     } else {
         audio.pause();
+        volumeOff.style.display = 'inline';
+        volumeOn.style.display = 'none';
     }
 }
+
 
 // Avatar
 document.addEventListener("DOMContentLoaded", function () {
@@ -25,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
         avatar.classList.remove("rotate");
     });
 });
+
+
+// Bắt sự kiện khi trang đã tải hoàn toàn
+
 
 
 // script.js

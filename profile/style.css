@@ -61,7 +61,10 @@
 .playerIcon:hover span svg {
     animation: blink 0.5s linear infinite; /* Animation nhấp nháy */
 }
+
+
 /*// avatar //*/
+
 .rotating-avatar:hover {
     animation: none; /* Loại bỏ animation xoay tròn khi di chuột vào */
     /*filter: hue-rotate(180deg); !* Thay đổi màu sắc khi di chuột vào *!*/
