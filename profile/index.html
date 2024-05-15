@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiepnx03 Profile</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+
+<div class="bii-player" style="display: block;">
+    <div onclick="if (!window.__cfRLUnblockHandlers) return false; playPause();" class="bii-player-secondary" data-cf-modified-c31f5963fa98d056b9d112a4-="">
+        <div class="bii-player-secondary-content">Click vào đây nếu bạn muốn phát nhạc!</div>
+    </div>
+    <div onclick="if (!window.__cfRLUnblockHandlers) return false; playPause();" class="playerIcon" data-cf-modified-c31f5963fa98d056b9d112a4-="">
+        <span id="playerVolumeOff">
+            <svg width="25" height="27" fill="#fff" class="bi bi-volume-mute-fill" viewbox="0 0 16 16"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"></path></svg>
+        </span>
+        <span style="display:none;" id="playerVolumeOn">
+            <svg width="25" height="27" fill="#fff" class="bi bi-volume-up-fill" viewbox="0 0 16 16"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path></svg>
+        </span>
+    </div>
+    <audio id="audioPlayer" src="music/IDo.mp3"></audio>
+</div>
+
+
+<body>
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb" class="bg-light rounded-3 p-2 mb-4">
+                    <h4 class="text-center" id="typewriter">WELCOM TO MY PROFILE</h4>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img id="avatar" src="image/avatar.jpg" alt="avatar" class="rounded-circle img-fluid rotating-avatar rotating-blinking-avatar"
+                             style="width: 150px; height: 150px;">
+                        <h5 class="my-3">Hiepnx03</h5>
+                        <p class="text-muted mb-1">Java Developer</p>
+                        <p class="text-muted mb-2">Cầu Giấy, Hà Nội</p>
+                        <p class="text-muted mb-2">
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z"
+                                      fill="#E76F00"></path>
+                                <path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z"
+                                      fill="#E76F00"></path>
+                                <path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z"
+                                      fill="#5382A1"></path>
+                                <path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z"
+                                      fill="#5382A1"></path>
+                                <path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z"
+                                      fill="#5382A1"></path>
+                                <path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z"
+                                      fill="#5382A1"></path>
+                                <path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z"
+                                      fill="#5382A1"></path>
+                                <path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z"
+                                      fill="#5382A1"></path>
+                            </svg>
+                            <svg width="25px" height="25px" viewBox="0 0 64 64" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xml:space="preserve" xmlns:serif="http://www.serif.com/" style="
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 2;
+                    ">
+                    <rect id="Icons" x="-1088" y="-64" width="1280" height="800" style="fill: none"></rect>
+
+                                <g id="Icons1" serif:id="Icons">
+                      <g id="Strike"></g>
+
+                                    <g id="H1"></g>
+
+                                    <g id="H2"></g>
+
+                                    <g id="H3"></g>
+
+                                    <g id="list-ul"></g>
+
+                                    <g id="hamburger-1"></g>
+
+                                    <g id="hamburger-2"></g>
+
+                                    <g id="list-ol"></g>
+
+                                    <g id="list-task"></g>
+
+                                    <g id="trash"></g>
+
+                                    <g id="vertical-menu"></g>
+
+                                    <g id="horizontal-menu"></g>
+
+                                    <g id="sidebar-2"></g>
+
+                                    <g id="Pen"></g>
+
+                                    <g id="Pen1" serif:id="Pen"></g>
+
+                                    <g id="clock"></g>
+
+                                    <g id="external-link"></g>
+
+                                    <g id="hr"></g>
+
+                                    <g id="info"></g>
+
+                                    <g id="warning"></g>
+
+                                    <g id="plus-circle"></g>
+
+                                    <g id="minus-circle"></g>
+
+                                    <g id="vue"></g>
+
+                                    <g id="cog"></g>
+
+                                    <g id="logo"></g>
+
+                                    <g id="radio-check"></g>
+
+                                    <g id="eye-slash"></g>
+
+                                    <g id="eye"></g>
+
+                                    <g id="toggle-off"></g>
+
+                                    <g id="shredder"></g>
+
+                                    <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"></g>
+
+                                    <g id="react">
+                        <circle cx="32.001" cy="31.955" r="4.478" style="fill: #00d8ff"></circle>
+
+                                        <path d="M32.33,22.516c7.635,0.052 15.965,0.609 21.683,5.708c0.168,0.15 0.33,0.306 0.488,0.467c1.349,1.375 2.054,3.595 0.965,5.422c-2.234,3.751 -7.23,5.387 -12.067,6.394c-7.234,1.506 -14.798,1.518 -22.029,0.192c-4.161,-0.764 -8.416,-2.103 -11.373,-4.904c-1.151,-1.09 -2.135,-2.524 -1.981,-4.12c0.25,-2.582 2.727,-4.239 4.812,-5.361c5.791,-3.116 12.847,-3.813 19.502,-3.798Zm-0.554,1.173c-7.224,0.049 -15.043,0.51 -20.621,5.129c-0.195,0.161 -0.383,0.33 -0.564,0.507c-0.117,0.114 -0.23,0.233 -0.339,0.355c-0.979,1.1 -1.316,2.867 -0.392,4.188c0.93,1.329 2.342,2.288 3.796,3.07c5.438,2.924 11.864,3.443 18.129,3.465c6.343,0.023 12.884,-0.555 18.487,-3.452c2.232,-1.155 4.744,-2.851 4.655,-5.035c-0.082,-2.004 -2.036,-3.242 -3.499,-4.126c-0.396,-0.239 -0.803,-0.46 -1.216,-0.668c-5.562,-2.787 -12.08,-3.447 -18.436,-3.433Z"
+                                              style="fill: #00d8ff"></path>
+
+                                        <path d="M42.115,10.703c2.793,0.071 4.24,3.429 4.431,5.909c0.038,0.493 0.052,0.988 0.046,1.483c-0.006,0.536 -0.035,1.072 -0.082,1.606c-0.589,6.612 -3.608,12.909 -7.163,18.724c-3.477,5.688 -7.717,11.36 -13.485,13.996c-1.907,0.872 -4.175,1.41 -5.863,0.437c-2.314,-1.333 -2.567,-4.451 -2.524,-6.816c0.011,-0.581 0.049,-1.162 0.109,-1.741c0.889,-8.56 5.228,-16.669 10.658,-23.655c3.168,-4.076 6.937,-8.119 11.632,-9.583c0.739,-0.231 1.326,-0.371 2.241,-0.36Zm-0.134,1.172c-3.279,0.052 -6.223,2.482 -8.83,5.007c-6.854,6.637 -11.905,15.464 -13.937,24.721c-0.157,0.717 -0.289,1.439 -0.386,2.166c-0.075,0.563 -0.13,1.129 -0.159,1.697c-0.023,0.452 -0.031,0.905 -0.017,1.358c0.01,0.354 0.033,0.708 0.072,1.06c0.029,0.269 0.068,0.537 0.117,0.803c0.037,0.197 0.08,0.393 0.13,0.588c0.041,0.158 0.087,0.315 0.139,0.471c0.409,1.233 1.463,2.411 2.878,2.45c3.301,0.09 6.409,-2.317 9.096,-4.933c4.717,-4.591 8.232,-10.36 10.978,-16.424c2.216,-4.896 4.243,-10.218 3.111,-15.607c-0.043,-0.204 -0.093,-0.406 -0.15,-0.606c-0.047,-0.163 -0.1,-0.324 -0.158,-0.483c-0.44,-1.199 -1.475,-2.271 -2.884,-2.268Z"
+                                              style="fill: #00d8ff"></path>
+
+                                        <path d="M22.109,10.747c3.564,0.069 6.765,2.488 9.607,5.197c5.186,4.943 9.011,11.231 11.913,17.849c2.248,5.127 4.316,10.882 2.478,16.292c-0.579,1.705 -2.044,3.265 -3.997,3.305c-3.581,0.072 -6.9,-2.532 -9.78,-5.335c-7.225,-7.034 -12.589,-16.32 -14.427,-26.168c-0.132,-0.704 -0.237,-1.414 -0.309,-2.127c-0.059,-0.582 -0.096,-1.167 -0.106,-1.752c-0.008,-0.472 0.002,-0.944 0.035,-1.414c0.022,-0.314 0.054,-0.626 0.097,-0.937c0.041,-0.292 0.093,-0.583 0.158,-0.871c0.043,-0.191 0.091,-0.38 0.146,-0.568c0.539,-1.843 1.941,-3.485 4.185,-3.471Zm-0.135,1.173c-2.087,0.046 -3.042,2.507 -3.234,4.234c-0.039,0.354 -0.063,0.711 -0.074,1.068c-0.014,0.456 -0.008,0.913 0.015,1.369c0.328,6.599 3.278,12.979 6.838,18.821c3.352,5.5 7.4,10.978 12.968,13.794c1.608,0.813 3.562,1.452 4.951,0.684c1.742,-0.964 1.956,-3.261 2.049,-4.973c0.025,-0.466 0.028,-0.934 0.013,-1.401c-0.018,-0.586 -0.064,-1.171 -0.133,-1.753c-0.642,-5.437 -3.05,-10.582 -5.816,-15.444c-3.442,-6.048 -7.659,-12.076 -13.627,-15.225c-1.236,-0.652 -2.574,-1.185 -3.95,-1.174Z"
+                                              style="fill: #00d8ff"></path>
+                      </g>
+
+                                    <g id="check-selected"></g>
+
+                                    <g id="turn-off"></g>
+
+                                    <g id="code-block"></g>
+
+                                    <g id="user"></g>
+
+                                    <g id="coffee-bean"></g>
+
+                                    <g id="coffee-beans">
+                        <g id="coffee-bean1" serif:id="coffee-bean"></g>
+                      </g>
+
+                                    <g id="coffee-bean-filled"></g>
+
+                                    <g id="coffee-beans-filled">
+                        <g id="coffee-bean2" serif:id="coffee-bean"></g>
+                      </g>
+
+                                    <g id="clipboard"></g>
+
+                                    <g id="clipboard-paste"></g>
+
+                                    <g id="clipboard-copy"></g>
+
+                                    <g id="Layer1"></g>
+                    </g>
+                  </svg>
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h32v32H0z"></path>
+
+                                    <path fill="#70AD51"
+                                          d="M5.466 27.993c.586.473 1.446.385 1.918-.202.475-.585.386-1.445-.2-1.92-.585-.474-1.444-.383-1.92.202-.45.555-.392 1.356.115 1.844l-.266-.234C1.972 24.762 0 20.597 0 15.978 0 7.168 7.168 0 15.98 0c4.48 0 8.53 1.857 11.435 4.836.66-.898 1.232-1.902 1.7-3.015 2.036 6.118 3.233 11.26 2.795 15.31-.592 8.274-7.508 14.83-15.93 14.83-3.912 0-7.496-1.416-10.276-3.757l-.238-.21zm23.58-4.982c4.01-5.336 1.775-13.965-.085-19.48-1.657 3.453-5.738 6.094-9.262 6.93-3.303.788-6.226.142-9.283 1.318-6.97 2.68-6.86 10.992-3.02 12.86.002 0 .23.124.227.12 0-.002 5.644-1.122 8.764-2.274 4.56-1.684 9.566-5.835 11.213-10.657-.877 5.015-5.182 9.84-9.507 12.056-2.302 1.182-4.092 1.445-7.88 2.756-.464.158-.828.314-.828.314.96-.16 1.917-.212 1.917-.212 5.393-.255 13.807 1.516 17.745-3.73z"></path>
+                                </g>
+                            </svg>
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                                <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                                      fill="white"></path>
+                            </svg>
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="28" height="28" fill="#FFCA28"></rect>
+                                <path d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z"
+                                      fill="#3E3E3E"></path>
+                                <path d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z"
+                                      fill="#3E3E3E"></path>
+                            </svg>
+                            <svg width="20px" height="20px" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                                <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                                      fill="white"></path>
+                            </svg>
+                            <svg width="20px" height="20px" viewBox="0 0 256 256" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 preserveAspectRatio="xMidYMid">
+                                <g>
+                                    <path d="M96.4465116,7.38232558 C128.714419,-0.893023256 164.375814,3.92930233 192.833488,21.492093 C228.673488,42.9246512 252.070698,83.467907 252.666047,125.20186 C253.975814,167.352558 232.007442,209.146047 196.703256,232.066977 C157.410233,258.500465 103.054884,259.512558 62.9283721,234.388837 C22.027907,209.979535 -1.8455814,160.744186 4.28651163,113.473488 C9.22790698,63.5237209 47.8065116,19.467907 96.4465116,7.38232558 L96.4465116,7.38232558 L96.4465116,7.38232558 Z"
+                                          fill="#010101"></path>
+                                    <path d="M91.5051163,27.8027907 C152.468837,3.39348837 227.244651,48.4613953 233.555349,113.830698 C243.378605,172.651163 194.56,232.424186 134.965581,234.150698 C78.2883721,239.806512 23.5162791,191.76186 21.9088372,134.846512 C17.6818605,88.7665116 48.0446512,43.0437209 91.5051163,27.8027907 L91.5051163,27.8027907 L91.5051163,27.8027907 Z"
+                                          fill="#FFFFFF"></path>
+                                    <path d="M97.6372093,121.689302 C124.963721,99.3637209 151.694884,76.264186 179.616744,54.5934884 C164.971163,77.0976744 149.908837,99.304186 135.263256,121.808372 C122.701395,121.867907 110.139535,121.867907 97.6372093,121.689302 L97.6372093,121.689302 L97.6372093,121.689302 Z"
+                                          fill="#010101"></path>
+                                    <path d="M120.736744,134.132093 C133.35814,134.132093 145.92,134.132093 158.48186,134.310698 C130.976744,156.517209 104.364651,179.795349 76.3832558,201.406512 C91.0288372,178.902326 106.091163,156.636279 120.736744,134.132093 L120.736744,134.132093 L120.736744,134.132093 Z"
+                                          fill="#010101"></path>
+                                </g>
+                            </svg>
+
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                 fill="none">
+                                <path fill="#2396ED"
+                                      d="M12.342 4.536l.15-.227.262.159.116.083c.28.216.869.768.996 1.684.223-.04.448-.06.673-.06.534 0 .893.124 1.097.227l.105.057.068.045.191.156-.066.2a2.044 2.044 0 01-.47.73c-.29.299-.8.652-1.609.698l-.178.005h-.148c-.37.977-.867 2.078-1.702 3.066a7.081 7.081 0 01-1.74 1.488 7.941 7.941 0 01-2.549.968c-.644.125-1.298.187-1.953.185-1.45 0-2.73-.288-3.517-.792-.703-.449-1.243-1.182-1.606-2.177a8.25 8.25 0 01-.461-2.83.516.516 0 01.432-.516l.068-.005h10.54l.092-.007.149-.016c.256-.034.646-.11.92-.27-.328-.543-.421-1.178-.268-1.854a3.3 3.3 0 01.3-.81l.108-.187zM2.89 5.784l.04.007a.127.127 0 01.077.082l.006.04v1.315l-.006.041a.127.127 0 01-.078.082l-.039.006H1.478a.124.124 0 01-.117-.088l-.007-.04V5.912l.007-.04a.127.127 0 01.078-.083l.039-.006H2.89zm1.947 0l.039.007a.127.127 0 01.078.082l.006.04v1.315l-.007.041a.127.127 0 01-.078.082l-.039.006H3.424a.125.125 0 01-.117-.088L3.3 7.23V5.913a.13.13 0 01.085-.123l.039-.007h1.413zm1.976 0l.039.007a.127.127 0 01.077.082l.007.04v1.315l-.007.041a.127.127 0 01-.078.082l-.039.006H5.4a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.039-.006h1.413zm1.952 0l.039.007a.127.127 0 01.078.082l.007.04v1.315a.13.13 0 01-.085.123l-.04.006H7.353a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.04-.006h1.412zm1.97 0l.039.007a.127.127 0 01.078.082l.006.04v1.315a.13.13 0 01-.085.123l-.039.006H9.322a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.04-.006h1.411zM4.835 3.892l.04.007a.127.127 0 01.077.081l.007.041v1.315a.13.13 0 01-.085.123l-.039.007H3.424a.125.125 0 01-.117-.09l-.007-.04V4.021a.13.13 0 01.085-.122l.039-.007h1.412zm1.976 0l.04.007a.127.127 0 01.077.081l.007.041v1.315a.13.13 0 01-.085.123l-.039.007H5.4a.125.125 0 01-.117-.09l-.006-.04V4.021l.006-.04a.127.127 0 01.078-.082l.039-.007h1.412zm1.953 0c.054 0 .1.037.117.088l.007.041v1.315a.13.13 0 01-.085.123l-.04.007H7.353a.125.125 0 01-.117-.09l-.006-.04V4.021l.006-.04a.127.127 0 01.078-.082l.04-.007h1.412zm0-1.892c.054 0 .1.037.117.088l.007.04v1.316a.13.13 0 01-.085.123l-.04.006H7.353a.124.124 0 01-.117-.088l-.006-.04V2.128l.006-.04a.127.127 0 01.078-.082L7.353 2h1.412z"></path>
+                            </svg>
+                        </p>
+                        <p class="text-muted mb-2">
+                            <b class="name-container">
+                                <i class="fa fa-heart"></i>
+<!--                                <span style="color: #d6e40f">U</span>-->
+<!--                                <span style="color: #5bdb34"></span>-->
+<!--                                <span style="color: #1dcaad">L</span>-->
+<!--                                <span style="color: #e77b3c"></span>-->
+<!--                                <span style="color: #ca1d96"></span>-->
+<!--                                <span style="color: #e011e0">S</span>-->
+<!--                                <span style="color: #3c3fe7"></span>-->
+<!--                                <span style="color: #ca1d96">A</span>-->
+<!--                                <span style="color: #1dcaad"></span>-->
+
+                                <span style="color: #d6e40f">ĐẠI</span>
+                                <span style="color: #3c3fe7"> </span>
+                                <span style="color: #5bdb34">HỌC</span>
+                                <span style="color: #3c3fe7"> </span>
+                                <span style="color: #1dcaad">LAO</span>
+                                <span style="color: #3c3fe7"> </span>
+                                <span style="color: #e77b3c">ĐỘNG</span>
+                                <span style="color: #3c3fe7"> </span>
+                                <span style="color: #db3458">XÃ</span>
+                                <span style="color: #3c3fe7"> </span>
+                                <span style="color: #ca1d96">HỘI</span>
+                                <span style="color: #3c3fe7"> </span>
+
+                                <i class="fa fa-heart"></i>
+                            </b>
+                        </p>
+
+                        <a target="_blank" style="text-decoration: none"
+                           href="https://www.facebook.com/messages/t/ga.vit123"
+                           class="d-flex justify-content-center mb-2">
+                            <button type="button" class="btn btn-outline-info ms-1 messages">
+                                <svg width="25px" height="25px" viewBox="0 0 48 48" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>Messenger-color</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs></defs>
+                                    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Color-" transform="translate(-301.000000, -860.000000)" fill="#007FFF">
+                                            <path d="M325,860 C311.745143,860 301,869.949185 301,882.222222 C301,889.215556 304.489988,895.453481 309.944099,899.526963 L309.944099,908 L318.115876,903.515111 C320.296745,904.118667 322.607155,904.444444 325,904.444444 C338.254857,904.444444 349,894.495259 349,882.222222 C349,869.949185 338.254857,860 325,860 L325,860 Z M327.385093,889.925926 L321.273292,883.407407 L309.347826,889.925926 L322.465839,876 L328.726708,882.518519 L340.503106,876 L327.385093,889.925926 L327.385093,889.925926 Z"
+                                                  id="Messenger"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Message
+                            </button>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-github fa-lg"></i>
+                                <p class="mb-0">
+                                    <a target="_blank" href="https://github.com/hiepnx03">GITHUB</a>
+                                </p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                                <p class="mb-0">
+                                    <a target="_blank" href="https://www.facebook.com/ga.vit123/">FACEBOOK</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Họ &amp; Tên</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">Nguyễn Xuân Hiệp</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="email-container">
+                                    <p class="text-muted mb-0 email-address">
+                                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiepnx03@gmail.com"
+                                           target="_blank">
+                                            hiepnx03@gmail.com
+                                        </a>
+                                    </p>
+                                    <i style="margin-top: -5px; cursor: pointer"
+                                       onclick="copyToClipboard('hiepnx03@gmail.com', this)"
+                                       class="far fa-copy"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Số điện thoại</p>
+                            </div>
+                            <div class="col-sm-9 email-container">
+                                <p class="text-muted mb-0">0915411068</p>
+                                &nbsp;
+                                <i style="margin-top: -5px; cursor: pointer"
+                                   onclick="copyToClipboard('0915411068', this)" class="far fa-copy"></i>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Quê quán</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">Hương Khê, Hà Tĩnh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="text-align: center">Dự án cá nhân</h3>
+
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">
+                                    <span style="font-weight: bold"
+                                          class="font-italic me-1">2024-04 Website Camera</span>
+                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"
+                                       href="https://github.com/hiepnx03/2024-04-Fullstack-Springboot-React-Mysql-CameraShop"
+                                       class="btn btn-outline-dark btn-sm">GITHUB
+                                    </a>
+                                    <!--                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"-->
+                                    <!--                                       href="https://github.com/hiepnx03" class="btn btn-outline-danger btn-sm">DEMO</a>-->
+                                </p>
+                                <p style="font-size: small">
+                                    Công nghệ sử dụng: <b>ReactTS, Spring boot, MySQL</b>
+                                </p>
+                                <p class="mb-1 color-changing" style="font-size: 0.87rem; color: green">
+                                    Tiến độ hoàn thành (50%)
+                                </p>
+                                <div class="progress rounded" style="height: 5px">
+                                    <div class="progress-bar color-changing-bar" role="progressbar"
+                                         style="width: 50%; background-color: green" aria-valuenow="90"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">
+                                    <span style="font-weight: bold"
+                                          class="font-italic me-1">2023-12 Phần mềm nhận dạng hình ảnh vân tay</span>
+                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"
+                                       href="https://github.com/hiepnx03/2023-12-Python-CNNs-Fingerprint-image-recognition"
+                                       class="btn btn-outline-dark btn-sm">GITHUB
+                                    </a>
+                                    <!--                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"-->
+                                    <!--                                       href="https://github.com/hiepnx03" class="btn btn-outline-danger btn-sm">DEMO</a>-->
+                                </p>
+                                <p style="font-size: small">
+                                    Công nghệ sử dụng: <b>Python</b>
+                                </p>
+                                <p class="mb-1 color-changing" style="font-size: 0.87rem">
+                                    Tiến độ hoàn thành (100%)
+                                </p>
+                                <div class="progress rounded" style="height: 5px">
+                                    <div class="progress-bar color-changing-bar" role="progressbar"
+                                         style="width: 100%; background-color: green" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">
+                                    <span style="font-weight: bold"
+                                          class="font-italic me-1">2023-12 Website bán quần áo trẻ em</span>
+                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"
+                                       href="https://github.com/hiepnx03/2023-12-PHP-MySQL-ShopThoiTrangTreEm"
+                                       class="btn btn-outline-dark btn-sm">GITHUB
+                                    </a>
+                                    <!--                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"-->
+                                    <!--                                       href="https://github.com/hiepnx03" class="btn btn-outline-danger btn-sm">DEMO</a>-->
+                                </p>
+                                <p style="font-size: small">
+                                    Công nghệ sử dụng: <b>PHP, MySQL</b>
+                                </p>
+                                <p class="mb-1 color-changing" style="font-size: 0.87rem">
+                                    Tiến độ hoàn thành (100%)
+                                </p>
+                                <div class="progress rounded" style="height: 5px">
+                                    <div class="progress-bar color-changing-bar" role="progressbar"
+                                         style="width: 100%; background-color: green" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 my-1">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">
+                                    <span style="font-weight: bold"
+                                          class="font-italic me-1">2023-10 Phần mềm quản lý sách</span>
+                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"
+                                       href="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach"
+                                       class="btn btn-outline-dark btn-sm">GITHUB
+                                    </a>
+                                    <!--                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"-->
+                                    <!--                                       href="https://github.com/hiepnx03" class="btn btn-outline-danger btn-sm">DEMO</a>-->
+                                </p>
+                                <p style="font-size: small">
+                                    Công nghệ sử dụng: <b>C++ Winform, SQL Server</b>
+                                </p>
+                                <p class="mb-1 color-changing" style="font-size: 0.87rem">
+                                    Tiến độ hoàn thành (100%)
+                                </p>
+                                <div class="progress rounded" style="height: 5px">
+                                    <div class="progress-bar color-changing-bar" role="progressbar"
+                                         style="width: 100%; background-color: green" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 my-1">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">
+                                    <span style="font-weight: bold"
+                                          class="font-italic me-1">2023-05 Phần mềm quản lý sinh viên (dự án đầu tiên)</span>
+                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"
+                                       href="https://github.com/hiepnx03/2023-05-Java-Swing-MsSQL-QLSV"
+                                       class="btn btn-outline-dark btn-sm">GITHUB
+                                    </a>
+                                    <!--                                    <a target="_blank" style="text-decoration: none; margin-left: 10px"-->
+                                    <!--                                       href="https://github.com/hiepnx03" class="btn btn-outline-danger btn-sm">DEMO</a>-->
+                                </p>
+                                <p style="font-size: small">
+                                    Công nghệ sử dụng: <b>Java Swing, SQL Server</b>
+                                </p>
+                                <p class="mb-1 color-changing" style="font-size: 0.87rem">
+                                    Tiến độ hoàn thành (100%)
+                                </p>
+                                <div class="progress rounded" style="height: 5px">
+                                    <div class="progress-bar color-changing-bar" role="progressbar"
+                                         style="width: 100%; background-color: green" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div>
+</body>
+</html>
