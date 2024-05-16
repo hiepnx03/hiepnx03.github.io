@@ -1,0 +1,368 @@
+/* Màu Hồng */
+body.color-pink .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-pink .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-pink section {
+    background-color: #ffcccb;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .container {
+    background-color: #ffcccb;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .bg-light {
+    background-color: #ffc0cb !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .card {
+    background-color: #ffb6c1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .list-group-item {
+    background-color: #ffb6c1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink .list-group-item a {
+    color: #8b4513;
+    transition: background-color 2s;
+}
+
+/* Màu Vàng */
+body.color-yellow .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-yellow .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-yellow section {
+    background-color: #ffff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .container {
+    background-color: #ffff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .bg-light {
+    background-color: #ffffcc !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .card {
+    background-color: #ffff99;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .list-group-item {
+    background-color: #ffff99;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow .list-group-item a {
+    color: #b8860b;
+    transition: background-color 2s;
+}
+
+/* Màu Cam */
+body.color-orange .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-orange .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-orange section {
+    background-color: #ffa500;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .container {
+    background-color: #ffa500;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .bg-light {
+    background-color: #ffd700 !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .card {
+    background-color: #ffcc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .list-group-item {
+    background-color: #ffcc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange .list-group-item a {
+    color: #8b4513;
+    transition: background-color 2s;
+}
+
+/* Màu Xanh Lá */
+body.color-green .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-green .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-green section {
+    background-color: #00ff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .container {
+    background-color: #00ff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .bg-light {
+    background-color: #90ee90 !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .card {
+    background-color: #7cfc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .list-group-item {
+    background-color: #7cfc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green .list-group-item a {
+    color: #006400;
+    transition: background-color 2s;
+}
+
+/* Màu Xanh Nước Biển */
+body.color-blue .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-blue .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-blue section {
+    background-color: #4169e1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .container {
+    background-color: #4169e1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .bg-light {
+    background-color: #87ceeb !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .card {
+    background-color: #add8e6;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .list-group-item {
+    background-color: #add8e6;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue .list-group-item a {
+    color: #00008b;
+    transition: background-color 2s;
+}
+
+/*màu đen */
+body.color-black .text-center {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black .btn-outline-dark {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    border-color: #ddd;
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black .text-muted {
+    color: #ddd !important; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black section {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Nền bên trong */
+body.color-black .container {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh welcome */
+body.color-black .bg-light {
+    background-color: #333 !important; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Các thẻ */
+body.color-black .card {
+    background-color: #444; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh GitHub, Facebook */
+body.color-black .list-group-item {
+    background-color: #555; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Chữ trên thanh GitHub, Facebook */
+body.color-black .list-group-item a {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Màu Trắng */
+body.color-white .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-white .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-white section {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .container {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .bg-light {
+    background-color: #f8f9fa !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .card {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .list-group-item {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white .list-group-item a {
+    color: #007bff;
+    transition: background-color 2s;
+}

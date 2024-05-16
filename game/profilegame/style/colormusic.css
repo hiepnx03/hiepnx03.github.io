@@ -1,0 +1,368 @@
+/* Màu Hồng */
+body.color-pink.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-pink.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing section {
+    background-color: #ffcccb;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .container {
+    background-color: #ffcccb;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .bg-light {
+    background-color: #ffc0cb !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .card {
+    background-color: #ffb6c1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .list-group-item {
+    background-color: #ffb6c1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-pink.music-playing .list-group-item a {
+    color: #8b4513;
+    transition: background-color 2s;
+}
+
+/* Màu Vàng */
+body.color-yellow.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-yellow.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing section {
+    background-color: #ffff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .container {
+    background-color: #ffff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .bg-light {
+    background-color: #ffffcc !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .card {
+    background-color: #ffff99;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .list-group-item {
+    background-color: #ffff99;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-yellow.music-playing .list-group-item a {
+    color: #b8860b;
+    transition: background-color 2s;
+}
+
+/* Màu Cam */
+body.color-orange.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-orange.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing section {
+    background-color: #ffa500;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .container {
+    background-color: #ffa500;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .bg-light {
+    background-color: #ffd700 !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .card {
+    background-color: #ffcc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .list-group-item {
+    background-color: #ffcc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-orange.music-playing .list-group-item a {
+    color: #8b4513;
+    transition: background-color 2s;
+}
+
+/* Màu Xanh Lá */
+body.color-green.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-green.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing section {
+    background-color: #00ff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .container {
+    background-color: #00ff00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .bg-light {
+    background-color: #90ee90 !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .card {
+    background-color: #7cfc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .list-group-item {
+    background-color: #7cfc00;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-green.music-playing .list-group-item a {
+    color: #006400;
+    transition: background-color 2s;
+}
+
+/* Màu Xanh Nước Biển */
+body.color-blue.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-blue.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing section {
+    background-color: #4169e1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .container {
+    background-color: #4169e1;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .bg-light {
+    background-color: #87ceeb !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .card {
+    background-color: #add8e6;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .list-group-item {
+    background-color: #add8e6;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-blue.music-playing .list-group-item a {
+    color: #00008b;
+    transition: background-color 2s;
+}
+
+/*màu đen */
+body.color-black.music-playing .text-center {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black.music-playing .btn-outline-dark {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    border-color: #ddd;
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black.music-playing .text-muted {
+    color: #ddd !important; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+body.color-black.music-playing section {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Nền bên trong */
+body.color-black.music-playing .container {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh welcome */
+body.color-black.music-playing .bg-light {
+    background-color: #333 !important; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Các thẻ */
+body.color-black.music-playing .card {
+    background-color: #444; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh GitHub, Facebook */
+body.color-black.music-playing .list-group-item {
+    background-color: #555; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Chữ trên thanh GitHub, Facebook */
+body.color-black.music-playing .list-group-item a {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Màu Trắng */
+body.color-white.music-playing .text-center {
+    color: #333333;
+    transition: color 2s;
+}
+
+body.color-white.music-playing .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .text-muted {
+    color: #333333 !important;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing section {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .container {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .bg-light {
+    background-color: #f8f9fa !important;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .card {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .list-group-item {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 2s;
+}
+
+body.color-white.music-playing .list-group-item a {
+    color: #007bff;
+    transition: background-color 2s;
+}
