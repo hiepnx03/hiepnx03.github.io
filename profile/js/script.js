@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Áp dụng màu cho các phần tử tương ứng
     function applyColor(color) {
         // Xóa tất cả các class màu trước đó
-        document.body.classList.remove("color-pink", "color-yellow", "color-orange", "color-green", "color-blue", "color-black");
+        document.body.classList.remove("color-pink", "color-yellow", "color-orange", "color-green", "color-blue", "color-black", "color-white");
 
         // Thêm class màu mới
         if (color === "#ff69b4") {
@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.classList.add("color-blue");
         } else if (color === "#000000") {
             document.body.classList.add("color-black");
+        }else if (color === "#ffffff") {
+            document.body.classList.add("color-white");
         }
 
         // Đóng dropdown sau khi chọn màu
