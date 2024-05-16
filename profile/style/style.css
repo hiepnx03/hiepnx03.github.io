@@ -133,6 +133,7 @@ body.music-playing .list-group-item a {
 }
 
 .petal {
+    top: -20px;
     position: absolute;
     width: 20px;
     height: 20px;

@@ -1,3 +1,4 @@
+// CHUYỂN MÀU
 document.addEventListener("DOMContentLoaded", function() {
     const colorThemeButton = document.getElementById("colorThemeButton");
     const colorOptions = document.querySelectorAll(".color-option");
@@ -84,6 +85,8 @@ function playPause() {
     }
 }
 
+
+// hoa roi
 function startFallingPetals(container) {
     for (let i = 0; i < 50; i++) { // Số lượng cánh hoa
         let petal = document.createElement('div');
