@@ -10,5 +10,9 @@
 - https://hiepnx03.github.io/f8-project-08/index.html
 - https://hiepnx03.github.io/testproject/nasa/hack.html
 - https://drive.google.com/drive/folders/13UocsF0l33psTch2S5Bo5PP4j1II5aBc?usp=sharing
+- 
 - https://hiepnx03.github.io/profile/index.html
+- https://tinyurl.com/37a378kc
+- 
 - https://hiepnx03.github.io/game/profilegame/index.html
+- https://tinyurl.com/55b2udxu
