@@ -133,10 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // script.js
-// script.js
-
-// script.js
-
 function copyToClipboard(text, element) {
     navigator.clipboard
         .writeText(text)
@@ -168,9 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(runTypewriter, 100);
             }
         }
-
         typeNextCharacter();
     }
-
     runTypewriter();
 });
