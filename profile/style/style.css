@@ -1,0 +1,1395 @@
+#colorThemeButton {
+    position: fixed;
+    bottom: 60px; /* Di chuyển nút lên 40px từ dưới cùng */
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#colorThemeButton:hover {
+    background-color: #999;
+}
+#colorPicker {
+
+    position: fixed;
+    bottom: 100px; /* Đặt vị trí theo ý muốn */
+    right: calc(20px + 20px + 100%); /* Đặt vị trí theo ý muốn */
+    z-index: 9999; /* Đảm bảo nó ở trên cùng */
+}
+
+
+/* Nút kích hoạt dropdown */
+.dropbtn {
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    position: fixed;
+    bottom: 60px; /* Di chuyển nút lên 40px từ dưới cùng */
+    right: 20px;
+    padding: 10px 20px;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Hiển thị dropdown content khi hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Tùy chọn màu */
+.color-option {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Màu của các tùy chọn */
+.color-option:hover {
+    background-color: #ddd;
+}
+
+
+
+/*/////////////////////// màu /////////////////////*/
+/*ô git hub ben project*/
+body.music-playing .btn-outline-dark {
+    color: #ddd ;/* Màu chữ khi nhạc được bật */
+    border-color: #ddd;
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+/*màu chữ trong mục que quan ten */
+body.music-playing .text-muted {
+    color: #ddd !important;/* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Nền Tổng thể */
+body.music-playing section {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Nền bên trong */
+body.music-playing .container {
+    background-color: #222; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh welcome */
+body.music-playing .bg-light {
+    background-color: #333 !important; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+/*màu chữ WELCOME*/
+body.music-playing .text-center {
+    color: #ddd ;/* Màu chữ khi nhạc được bật */
+    transition: color 2s; /* Thời gian chuyển đổi màu */
+}
+/* Các thẻ */
+body.music-playing .card {
+    background-color: #444; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Thanh GitHub, Facebook */
+body.music-playing .list-group-item {
+    background-color: #555; /* Màu đậm */
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+/* Chữ trên thanh GitHub, Facebook */
+body.music-playing .list-group-item a {
+    color: #ddd; /* Màu chữ khi nhạc được bật */
+    transition: background-color 2s; /* Thời gian chuyển đổi màu */
+}
+
+
+/* Các kiểu khác nếu cần */
+
+
+
+#petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.petal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../image/petal.png'); /* Replace with your petal image */
+    background-size: cover;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) rotate(360deg);
+    }
+}
+
+
+
+/*// music //*/
+.bii-player {
+    position: fixed;
+    bottom: 70px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    z-index: 99999;
+    display: none;
+}
+.bii-player:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgba(242, 59, 67, 0.3);
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    -webkit-animation: biilogo-pulse 1s infinite;
+    animation: biilogo-pulse 1s infinite;
+    z-index: 1;
+}
+.bii-player-secondary {
+    position: absolute;
+    width: 310px;
+    left: 25px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.bii-player .playerIcon {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #df4758;
+    padding-top: 7px;
+    padding-left: 9px;
+    position: absolute;
+    z-index: 2;
+}
+/* Định nghĩa animation nhấp nháy màu */
+@keyframes blink {
+    0% { fill: white; } /* Màu gốc */
+    50% { fill: yellow; } /* Màu khi nhấp nháy */
+    100% { fill: white; } /* Quay lại màu gốc */
+}
+
+/* Áp dụng animation nhấp nháy màu khi hover */
+.playerIcon:hover span svg {
+    animation: blink 0.5s linear infinite; /* Animation nhấp nháy */
+}
+
+
+/*// avatar //*/
+
+.rotating-avatar:hover {
+    animation: none; /* Loại bỏ animation xoay tròn khi di chuột vào */
+    /*filter: hue-rotate(180deg); !* Thay đổi màu sắc khi di chuột vào *!*/
+    border-color: red; /* Thay đổi màu sắc của viền khi di chuột vào */
+}
+
+.rotating-avatar {
+    animation: rotate 4s linear infinite; /* Áp dụng animation xoay */
+}
+
+.rounded-square {
+    /*border-radius: 20px; !* Bo tròn góc *!*/
+    object-fit: cover;  /* Đảm bảo hình ảnh không bị méo */
+    border: 5px solid transparent; /* Thêm viền để áp dụng hiệu ứng nhấp nháy màu */
+}
+.rotating-blinking-avatar {
+    animation: rotate 3s linear infinite, colorchange 0.4s linear infinite ,blinkColor 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes blinkColor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        filter: hue-rotate(90deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: blue;
+    }
+    100% {
+        border-color: red;
+    }
+}
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-address {
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2ecc71;
+    }
+
+    25% {
+        background-color: #3498db;
+    }
+
+    50% {
+        background-color: #9b59b6;
+    }
+
+    75% {
+        background-color: #e74c3c;
+    }
+
+    100% {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes colorText {
+    0% {
+        color: #2ecc71;
+    }
+
+    25% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #9b59b6;
+    }
+
+    75% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #2ecc71;
+    }
+}
+
+.color-changing-bar {
+    animation: colorChange 2s infinite;
+}
+
+.color-changing {
+    animation: colorText 2s infinite;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h4 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rounded-circle {
+    border: 5px solid #ffffff;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+}
+
+.list-group-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+h4.text-center {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.messages:hover svg {
+    filter: brightness(0%);
+}
+
+@keyframes colorHeart {
+
+    0% {
+        color: #e40f44;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #db3458;
+    }
+
+    25% {
+        color: #ca1d34;
+    }
+
+    37.5% {
+        color: #e74c3c;
+    }
+
+    50% {
+        color: #e01111;
+    }
+
+    62.5% {
+        color: #ca1d34;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #e01111;
+    }
+}
+
+@keyframes colorHeartText {
+
+    0% {
+        color: #d6e40f;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #5bdb34;
+    }
+
+    25% {
+        color: #1dcaad;
+    }
+
+    37.5% {
+        color: #3c3fe7;
+    }
+
+    50% {
+        color: #e011e0;
+    }
+
+    62.5% {
+        color: #ca1d96;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e77b3c;
+    }
+
+    100% {
+        color: #11e060;
+    }
+}
+
+.fa-heart {
+    animation: colorHeart 1s infinite;
+}
+
+.name-container {
+    display: inline-block;
+    height: 40px;
+}
+
+.name-container span {
+    margin-left: -5px;
+    line-height: 40px;
+    display: inline-block;
+    animation: colorHeartText 5s infinite;
+    animation-delay: calc(var(--animation-order) * 0.5s);
+}
+
+.name-container span:nth-child(1) {
+    --animation-order: 1;
+}
+
+.name-container span:nth-child(2) {
+    --animation-order: 2;
+}
+
+.name-container span:nth-child(3) {
+    --animation-order: 3;
+}
+
+.name-container span:nth-child(4) {
+    --animation-order: 4;
+}
+
+.name-container span:nth-child(5) {
+    --animation-order: 5;
+}
+
+.name-container span:nth-child(6) {
+    --animation-order: 6;
+}
+
+.name-container span:nth-child(7) {
+    --animation-order: 7;
+}
+
+.name-container span:nth-child(8) {
+    --animation-order: 8;
+}
+
+.name-container span:nth-child(9) {
+    --animation-order: 9;
+}
+
+.name-container span:nth-child(10) {
+    --animation-order: 10;
+}
+
+.name-container span:nth-child(11) {
+    --animation-order: 11;
+}
+
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-address {
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2ecc71;
+    }
+
+    25% {
+        background-color: #3498db;
+    }
+
+    50% {
+        background-color: #9b59b6;
+    }
+
+    75% {
+        background-color: #e74c3c;
+    }
+
+    100% {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes colorText {
+    0% {
+        color: #2ecc71;
+    }
+
+    25% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #9b59b6;
+    }
+
+    75% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #2ecc71;
+    }
+}
+
+.color-changing-bar {
+    animation: colorChange 2s infinite;
+}
+
+.color-changing {
+    animation: colorText 2s infinite;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h4 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rounded-circle {
+    border: 5px solid #ffffff;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+}
+
+.list-group-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+h4.text-center {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.messages:hover svg {
+    filter: brightness(0%);
+}
+
+@keyframes colorHeart {
+
+    0% {
+        color: #e40f44;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #db3458;
+    }
+
+    25% {
+        color: #ca1d34;
+    }
+
+    37.5% {
+        color: #e74c3c;
+    }
+
+    50% {
+        color: #e01111;
+    }
+
+    62.5% {
+        color: #ca1d34;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #e01111;
+    }
+}
+
+@keyframes colorHeartText {
+
+    0% {
+        color: #d6e40f;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #5bdb34;
+    }
+
+    25% {
+        color: #1dcaad;
+    }
+
+    37.5% {
+        color: #3c3fe7;
+    }
+
+    50% {
+        color: #e011e0;
+    }
+
+    62.5% {
+        color: #ca1d96;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e77b3c;
+    }
+
+    100% {
+        color: #11e060;
+    }
+}
+
+.fa-heart {
+    animation: colorHeart 1s infinite;
+}
+
+.name-container {
+    display: inline-block;
+    height: 40px;
+}
+
+.name-container span {
+    margin-left: -5px;
+    line-height: 40px;
+    display: inline-block;
+    animation: colorHeartText 5s infinite;
+    animation-delay: calc(var(--animation-order) * 0.5s);
+}
+
+.name-container span:nth-child(1) {
+    --animation-order: 1;
+}
+
+.name-container span:nth-child(2) {
+    --animation-order: 2;
+}
+
+.name-container span:nth-child(3) {
+    --animation-order: 3;
+}
+
+.name-container span:nth-child(4) {
+    --animation-order: 4;
+}
+
+.name-container span:nth-child(5) {
+    --animation-order: 5;
+}
+
+.name-container span:nth-child(6) {
+    --animation-order: 6;
+}
+
+.name-container span:nth-child(7) {
+    --animation-order: 7;
+}
+
+.name-container span:nth-child(8) {
+    --animation-order: 8;
+}
+
+.name-container span:nth-child(9) {
+    --animation-order: 9;
+}
+
+.name-container span:nth-child(10) {
+    --animation-order: 10;
+}
+
+.name-container span:nth-child(11) {
+    --animation-order: 11;
+}/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-address {
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2ecc71;
+    }
+
+    25% {
+        background-color: #3498db;
+    }
+
+    50% {
+        background-color: #9b59b6;
+    }
+
+    75% {
+        background-color: #e74c3c;
+    }
+
+    100% {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes colorText {
+    0% {
+        color: #2ecc71;
+    }
+
+    25% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #9b59b6;
+    }
+
+    75% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #2ecc71;
+    }
+}
+
+.color-changing-bar {
+    animation: colorChange 2s infinite;
+}
+
+.color-changing {
+    animation: colorText 2s infinite;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h4 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rounded-circle {
+    border: 5px solid #ffffff;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+}
+
+.list-group-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+h4.text-center {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.messages:hover svg {
+    filter: brightness(0%);
+}
+
+@keyframes colorHeart {
+
+    0% {
+        color: #e40f44;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #db3458;
+    }
+
+    25% {
+        color: #ca1d34;
+    }
+
+    37.5% {
+        color: #e74c3c;
+    }
+
+    50% {
+        color: #e01111;
+    }
+
+    62.5% {
+        color: #ca1d34;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #e01111;
+    }
+}
+
+@keyframes colorHeartText {
+
+    0% {
+        color: #d6e40f;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #5bdb34;
+    }
+
+    25% {
+        color: #1dcaad;
+    }
+
+    37.5% {
+        color: #3c3fe7;
+    }
+
+    50% {
+        color: #e011e0;
+    }
+
+    62.5% {
+        color: #ca1d96;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e77b3c;
+    }
+
+    100% {
+        color: #11e060;
+    }
+}
+
+.fa-heart {
+    animation: colorHeart 1s infinite;
+}
+
+.name-container {
+    display: inline-block;
+    height: 40px;
+}
+
+.name-container span {
+    margin-left: -5px;
+    line-height: 40px;
+    display: inline-block;
+    animation: colorHeartText 5s infinite;
+    animation-delay: calc(var(--animation-order) * 0.5s);
+}
+
+.name-container span:nth-child(1) {
+    --animation-order: 1;
+}
+
+.name-container span:nth-child(2) {
+    --animation-order: 2;
+}
+
+.name-container span:nth-child(3) {
+    --animation-order: 3;
+}
+
+.name-container span:nth-child(4) {
+    --animation-order: 4;
+}
+
+.name-container span:nth-child(5) {
+    --animation-order: 5;
+}
+
+.name-container span:nth-child(6) {
+    --animation-order: 6;
+}
+
+.name-container span:nth-child(7) {
+    --animation-order: 7;
+}
+
+.name-container span:nth-child(8) {
+    --animation-order: 8;
+}
+
+.name-container span:nth-child(9) {
+    --animation-order: 9;
+}
+
+.name-container span:nth-child(10) {
+    --animation-order: 10;
+}
+
+.name-container span:nth-child(11) {
+    --animation-order: 11;
+}/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-address {
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2ecc71;
+    }
+
+    25% {
+        background-color: #3498db;
+    }
+
+    50% {
+        background-color: #9b59b6;
+    }
+
+    75% {
+        background-color: #e74c3c;
+    }
+
+    100% {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes colorText {
+    0% {
+        color: #2ecc71;
+    }
+
+    25% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #9b59b6;
+    }
+
+    75% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #2ecc71;
+    }
+}
+
+.color-changing-bar {
+    animation: colorChange 2s infinite;
+}
+
+.color-changing {
+    animation: colorText 2s infinite;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h4 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rounded-circle {
+    border: 5px solid #ffffff;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+}
+
+.list-group-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+h4.text-center {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.messages:hover svg {
+    filter: brightness(0%);
+}
+
+@keyframes colorHeart {
+
+    0% {
+        color: #e40f44;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #db3458;
+    }
+
+    25% {
+        color: #ca1d34;
+    }
+
+    37.5% {
+        color: #e74c3c;
+    }
+
+    50% {
+        color: #e01111;
+    }
+
+    62.5% {
+        color: #ca1d34;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e74c3c;
+    }
+
+    100% {
+        color: #e01111;
+    }
+}
+
+@keyframes colorHeartText {
+
+    0% {
+        color: #d6e40f;
+        font-size: 25px;
+    }
+
+    12.5% {
+        color: #5bdb34;
+    }
+
+    25% {
+        color: #1dcaad;
+    }
+
+    37.5% {
+        color: #3c3fe7;
+    }
+
+    50% {
+        color: #e011e0;
+    }
+
+    62.5% {
+        color: #ca1d96;
+    }
+
+    75% {
+        color: #db3458;
+    }
+
+    87.5% {
+        color: #e77b3c;
+    }
+
+    100% {
+        color: #11e060;
+    }
+}
+
+.fa-heart {
+    animation: colorHeart 1s infinite;
+}
+
+.name-container {
+    display: inline-block;
+    height: 40px;
+}
+
+.name-container span {
+    margin-left: -5px;
+    line-height: 40px;
+    display: inline-block;
+    animation: colorHeartText 5s infinite;
+    animation-delay: calc(var(--animation-order) * 0.5s);
+}
+
+.name-container span:nth-child(1) {
+    --animation-order: 1;
+}
+
+.name-container span:nth-child(2) {
+    --animation-order: 2;
+}
+
+.name-container span:nth-child(3) {
+    --animation-order: 3;
+}
+
+.name-container span:nth-child(4) {
+    --animation-order: 4;
+}
+
+.name-container span:nth-child(5) {
+    --animation-order: 5;
+}
+
+.name-container span:nth-child(6) {
+    --animation-order: 6;
+}
+
+.name-container span:nth-child(7) {
+    --animation-order: 7;
+}
+
+.name-container span:nth-child(8) {
+    --animation-order: 8;
+}
+
+.name-container span:nth-child(9) {
+    --animation-order: 9;
+}
+
+.name-container span:nth-child(10) {
+    --animation-order: 10;
+}
+
+.name-container span:nth-child(11) {
+    --animation-order: 11;
+}
