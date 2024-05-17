@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiepnx03 Profile</title>
-    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <link rel="icon" type="image/x-icon" href="/image/icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -67,7 +67,7 @@
             <div class="col-lg-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
-                        <img id="avatar" src="image/avatar.jpg" alt="avatar" class="rounded-circle img-fluid rotating-avatar rotating-blinking-avatar"
+                        <img id="avatar" src="image/avatar.png" alt="avatar" class="rounded-circle img-fluid rotating-avatar rotating-blinking-avatar"
                              style="width: 150px; height: 150px;">
                         <h5 class="my-3">Hiepnx03</h5>
                         <p class="text-muted mb-1">Java Developer</p>
@@ -533,80 +533,10 @@
 </section>
 
 
-<div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div>
 </body>
 </html>
 
 <script>
-
-    // music
-    function playPause() {
-        var audio = document.getElementById('audioPlayer');
-        var volumeOff = document.getElementById('playerVolumeOff');
-        var volumeOn = document.getElementById('playerVolumeOn');
-        var petalsContainer = document.getElementById('petals-container');
-        var body = document.body;
-
-        if (audio.paused) {
-            audio.play();
-            volumeOff.style.display = 'none';
-            volumeOn.style.display = 'inline';
-            body.classList.add('music-playing'); // Thêm lớp khi nhạc được bật
-            startFallingPetals(petalsContainer);
-        } else {
-            audio.pause();
-            volumeOff.style.display = 'inline';
-            volumeOn.style.display = 'none';
-            body.classList.remove('music-playing'); // Xóa lớp khi nhạc tắt
-            stopFallingPetals(petalsContainer);
-        }
-    }
-
-    function startFallingPetals(container) {
-        for (let i = 0; i < 50; i++) { // Số lượng cánh hoa
-            let petal = document.createElement('div');
-            petal.className = 'petal';
-            petal.style.left = Math.random() * 100 + 'vw';
-            petal.style.animationDuration = Math.random() * 3 + 2 + 's'; // Thời gian ngẫu nhiên từ 2s đến 5s
-            petal.style.animationDelay = Math.random() * 5 + 's'; // Độ trễ ngẫu nhiên
-            container.appendChild(petal);
-        }
-    }
-
-    function stopFallingPetals(container) {
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
-        }
-    }
-
-    // Tùy chọn: loại bỏ nếu không muốn tự động phát khi tải trang
-    document.addEventListener('DOMContentLoaded', function() {
-        playPause();
-    });
-
-
-
-
-    // Avatar
-    document.addEventListener("DOMContentLoaded", function () {
-        // Lấy đối tượng hình ảnh
-        const avatar = document.querySelector(".rotating-avatar");
-
-        // Bắt sự kiện khi di chuột vào hình ảnh
-        avatar.addEventListener("mouseenter", function () {
-            // Thêm class "rotate" để bắt đầu hiệu ứng xoay
-            avatar.classList.add("rotate");
-        });
-
-        // Bắt sự kiện khi di chuột ra khỏi hình ảnh
-        avatar.addEventListener("mouseleave", function () {
-            // Xóa class "rotate" để dừng hiệu ứng xoay
-            avatar.classList.remove("rotate");
-        });
-    });
-
-
-    // Bắt sự kiện khi trang đã tải hoàn toàn
 
 
 
