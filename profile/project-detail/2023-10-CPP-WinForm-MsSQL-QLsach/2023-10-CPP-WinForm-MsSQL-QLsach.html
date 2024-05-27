@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2023-10-CPP-WinForm-MsSQL-QLsach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/project-detail/2023-10-CPP-WinForm-MsSQL-QLsach/style.css">
+    <link rel="stylesheet" href="/profile/project-detail/2023-10-CPP-WinForm-MsSQL-QLsach/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        video {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="section-title">Dự Án Cá Nhân</div>
+    <p>Chương trình bán sách được viết bằng C++ sử dụng Winform để làm giao diện và database MsSQL.</p>
+
+    <div class="section-title">Chức Năng Cơ Bản</div>
+    <ul>
+        <li>Tìm kiếm</li>
+        <li>CRUD</li>
+        <li>Đổi mật khẩu</li>
+    </ul>
+
+    <div class="section-title">Cài Đặt Chương Trình</div>
+    <ol>
+        <li>Phần mềm sử dụng Visual Studio 2019 và SQL Server Management Studio 19.</li>
+        <li>Cấu hình tài khoản SQL Server là 'sa' và mật khẩu là '12345'.</li>
+        <li>Tải các thư viện có hỗ trợ Winform ở Visual Studio 2019 (tải toàn bộ cho chắc).</li>
+        <li>Tạo 2 project: 1 là Admin với Project1.</li>
+        <li>Copy các file .cpp, .h, .resx và dán vào các project.</li>
+    </ol>
+
+    <div class="section-title">Hình Ảnh</div>
+    <h3>Admin</h3>
+    <p>Login</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/12e9c999-2482-4537-9dcd-70746e82a2e9" alt="Admin Login">
+
+    <p>Menu</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/55aec50c-0397-4319-8c37-95f45314245b" alt="Admin Menu">
+
+    <p>Quản lý sách (CRUD, tìm kiếm)</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/dccae331-2dbd-483e-9e36-684c6ac34a45" alt="Quản lý sách">
+
+    <p>Xem thông tin người dùng (có thể xóa, tìm kiếm)</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/73eb5fcf-0a65-42c5-b1ad-e46694a813fa" alt="Xem thông tin người dùng">
+
+    <p>Xem đơn hàng người dùng đặt (tìm, xóa)</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/071becd6-10e9-4a44-80c5-e3660b8a3c64" alt="Xem đơn hàng">
+
+    <p>Đổi mật khẩu</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/d53bb236-3596-4ecb-8711-26881484809a" alt="Đổi mật khẩu">
+
+    <p>Xem yêu cầu trợ giúp của khách hàng (tìm theo email và nội dung)</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/abd9ea9f-09e7-4053-ab6d-1386aa8c3ae2" alt="Xem yêu cầu trợ giúp">
+
+    <h3>User</h3>
+    <p>Đăng ký</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/2b4525a7-9ecc-4252-84b8-21692fe86a59" alt="User Đăng ký">
+
+    <p>Đăng nhập</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/28617c25-6320-4ffd-a877-1ede045b4909" alt="User Đăng nhập">
+
+    <p>Tìm kiếm sách và mua sách</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/ebb6147f-50fb-4288-896b-8e077e44b862" alt="Tìm kiếm sách và mua sách">
+
+    <p>Gửi yêu cầu trợ giúp</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/e9bb8159-df9d-4037-9764-1c656e426fa2" alt="Gửi yêu cầu trợ giúp">
+
+    <p>Đổi mật khẩu</p>
+    <img src="https://github.com/hiepnx03/2023-10-CPP-WinForm-MsSQL-QLsach/assets/71397941/e7331f17-9006-41af-94e9-8d4388721fa6" alt="User Đổi mật khẩu">
+
+    <div class="section-title">Đánh Dấu Cột Mốc</div>
+    <p>Kỳ 1 năm 3 (21/08/23 - 29/10/23), đây là thời gian học của môn lập trình hướng đối tượng, nhưng trường tôi bắt buộc sử dụng C++.</p>
+    <p>Bài tập lớn của tôi được hoàn thành trong vòng hơn 1 tháng xíu.</p>
+
+    <div class="section-title">Khó Khăn</div>
+    <ul>
+        <li>Tôi chưa làm được dự án lớn của một shop nên chưa nắm vững được logic của một chương trình lớn, nên bài của tôi khá ngáo và không ứng dụng được nhiều.</li>
+        <li>Trên YouTube rất ít video hướng dẫn về Winform dành cho C++ cũng như là Winform + MsSQL trong C++.</li>
+        <li>Bài tập lớn này hầu như tôi sử dụng 90% ChatGPT để giải quyết.</li>
+    </ul>
+</div>
+
+<h1>DEMO PLEASE MUTE</h1>
+<video controls>
+    <source src="demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</body>
+</html>

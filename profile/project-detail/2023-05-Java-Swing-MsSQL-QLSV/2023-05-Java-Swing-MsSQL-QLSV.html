@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2024-05-Swing-Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/project-detail/2023-05-Java-Swing-MsSQL-QLSV/style.css">
+    <link rel="stylesheet" href="/profile/project-detail/2023-05-Java-Swing-MsSQL-QLSV/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <div class="section-title">PROJECT-QLSV-JAVASWING-MSSQL</div>
+    <p>Sử dụng Java Swing và Microsoft SQL Server để tạo ra một giao diện quản lý sinh viên.</p>
+
+    <div class="section-title">Tiến Hành Cài Đặt</div>
+    <h3>Về Phía SQL</h3>
+    <ol>
+        <li>Sử dụng "SQL Server Management Studio Management Studio 19" và cài đặt cấu hình (login sa và password 12345).</li>
+        <li>Chạy file QUANLYSINHVIEN.sql để tạo database.</li>
+        <li>Sử dụng "SQL Server 2022 Configuration Manager" để đổi cổng TCP/IP thành tất cả Port 1433.</li>
+    </ol>
+    <h3>Về Phía Java</h3>
+    <ol>
+        <li>Ở IntelliJ IDEA vào mục database bên phải màn hình.</li>
+        <li>Thêm các nguồn của MSSQL như sau:</li>
+    </ol>
+    <img src="https://github.com/hiepnx03/PROJECT-QLSV-JAVASWING-MSSQL/assets/71397941/fc16a6eb-b1cb-41c0-996d-a66f5fa11171" alt="Thêm nguồn MSSQL">
+    <p>Nó trả về 1 đường link Url ta sẽ tận dụng đường link đó để kết nối code với MSSQL.</p>
+    <ol start="3">
+        <li>Chạy file Login và nhập Tài Khoản "admin", Mật Khẩu "12345".</li>
+    </ol>
+    <p>Kết Quả</p>
+    <img src="https://github.com/hiepnx03/PROJECT-QLSV-JAVASWING-MSSQL/assets/71397941/93b1a54a-9e4d-45cd-9f1a-6613fc3bb573" alt="Kết quả đăng nhập thành công">
+    <p>Các chức năng: Thêm, Sửa, Xóa, Tìm sinh viên và thao tác thoát, làm trống.</p>
+
+    <div class="section-title">Đánh Dấu Cột Mốc</div>
+    <p>Năm 2 Kì 2 (16/05/2023), môn Lập Trình Java.</p>
+    <p>Tôi cần nhớ: <code>private static String DB_URL = "jdbc:sqlserver://DESKTOP-6USCVFE\\SQLEXPRESS:1433;database=testdb;encrypt=true;trustServerCertificate=true;";</code></p>
+    <img src="https://github.com/hiepnx03/PROJECT-QLSV-JAVASWING-MSSQL/assets/71397941/b52402a9-dece-42b7-8921-01035851b5ae" alt="Cấu hình Properties của database">
+
+    <div class="section-title">Tự Đánh Giá Sản Phẩm Chưa Hoàn Thiện</div>
+    <ul>
+        <li>Tôi chỉ sử dụng đúng mỗi CRUD không có gì đặc sắc.</li>
+        <li>Giao diện thì sơ xài.</li>
+        <li>Phân bố file thì không đâu vào đâu.</li>
+        <li>Đã thế còn khởi chạy sai project của IntelliJ nên việc tích hợp JDBC rất khó.</li>
+    </ul>
+
+    <div class="section-title">Rút Kinh Nghiệm</div>
+    <ul>
+        <li>Sẽ phát triển lại, bố cục lại file, sử dụng Maven để làm.</li>
+    </ul>
+</div>
+
+
+<h1>DEMO PLEASE MUTE</h1>
+<video controls>
+    <source src="demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</body>
+</html>
