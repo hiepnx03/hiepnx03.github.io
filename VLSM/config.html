@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+--------------------------------- Config Cisco --------------------------------<br>
+--- Router 1 ---<br>
+enable<br>
+config terminal<br>
+interface gig0/0<br>
+ip address (Network Address Host 1 + 1) (Subnet Mask Host 1)<br>
+no shut<br>
+interface gig0/1<br>
+ip address (Network Address Host 3 + 1) (Subnet Mask Host 3)<br>
+no shut<br>
+exit<br>
+ip route (Network Address Host 2) (Subnet Mask Host 2) (ip_R2_gần_R1)<br>
+exit<br>
+copy running-config startup-config<br><br>
+
+--- Router 2 ---<br>
+enable<br>
+config terminal<br>
+interface gig0/0<br>
+ip address (Network Address Host 2 + 1) (Subnet Mask Host 2)<br>
+no shut<br>
+interface gig0/1<br>
+ip address (Network Address Host 3 + 1) (Subnet Mask Host 3)<br>
+no shut<br>
+exit<br>
+ip route (Network Address Host 1) (Subnet Mask Host 1) (ip_R1_gần_R2)<br>
+exit<br>
+copy running-config startup-config<br>
+</body>
+</html>
