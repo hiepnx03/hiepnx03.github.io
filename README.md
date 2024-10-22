@@ -12,5 +12,5 @@
 - https://drive.google.com/drive/folders/13UocsF0l33psTch2S5Bo5PP4j1II5aBc?usp=sharing
 - # [MY-PROFILE](https://hiepnx03.github.io/MY-PROFILE/index.html)
 - # [VLSM-CALCULATOR](https://hiepnx03.github.io/2024-10-VLSM-Calculator-JavaScript/)
-- https://hiepnx03.github.io/game/profilegame/index.html
+- # [GAME](https://hiepnx03.github.io/game/profilegame/index.html)
 - https://tinyurl.com/55b2udxu
