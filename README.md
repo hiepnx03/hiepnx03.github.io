@@ -11,8 +11,8 @@
 - https://hiepnx03.github.io/testproject/nasa/hack.html
 - https://drive.google.com/drive/folders/13UocsF0l33psTch2S5Bo5PP4j1II5aBc?usp=sharing
 - 
-- https://hiepnx03.github.io/profile/index.html
-- https://tinyurl.com/37a378kc
+- [MY-PROFILE](https://hiepnx03.github.io/MY-PROFILE/index.html)
+- [https://tinyurl.com/37a378kc](https://tinyurl.com/2sscpkm9)
 - 
 - https://hiepnx03.github.io/game/profilegame/index.html
 - https://tinyurl.com/55b2udxu
